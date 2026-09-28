@@ -137,7 +137,15 @@ h1 em{color:var(--gold);font-style:normal;display:block;}
 <body>
 
 <script>
-fetch('/header.html').then(r=>r.text()).then(h=>{const e=document.createElement('div');e.innerHTML=h;document.body.prepend(e);}).catch(()=>{});
+fetch('/header.html').then(r=>r.text()).then(h=>{const e=document.createElement('div');e.innerHTML=h;document.body.prepend(e);
+  /* A11y fix: aria-label is not permitted on a plain <label>. Give it a valid role. */
+  const b=e.querySelector('label.gte-burger');
+  if(b){b.setAttribute('role','button');b.setAttribute('tabindex','0');
+    const t=document.getElementById(b.getAttribute('for'));
+    if(t){b.setAttribute('aria-controls',t.id);b.setAttribute('aria-expanded',String(t.checked));
+      t.addEventListener('change',()=>b.setAttribute('aria-expanded',String(t.checked)));
+      b.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();t.click();}});}}
+}).catch(()=>{});
 </script>
 
 <main>
@@ -181,6 +189,18 @@ fetch('/header.html').then(r=>r.text()).then(h=>{const e=document.createElement(
       <div class="card"><div class="ic">🚗</div><h3>Tree on Vehicle or Fence</h3><p>We lift and remove trees from cars, fences, and outbuildings with minimal added damage.</p></div>
       <div class="card"><div class="ic">🔌</div><h3>Near Power Lines</h3><p>Stay back and call your utility. We coordinate once lines are made safe.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="intro" id="included">
+  <div class="wrap">
+    <p class="section-eyebrow">What's Included</p>
+    <h2 class="section-title">What Our Emergency Tree Removal Service Covers</h2>
+    <p>Every emergency call is different, but our service is built around the same priorities: <strong>safety, speed, and a clean finish</strong>. Depending on the situation, a job can include:</p>
+    <p><strong>Hazard assessment.</strong> Before cutting, our arborist checks the tree's weight, tension points, and anything it is touching, such as roofs, fences, vehicles, or utility lines.</p>
+    <p><strong>Controlled removal.</strong> Trees are taken down in sections, using rigging where needed, so limbs and trunks don't cause further damage to your property.</p>
+    <p><strong>Debris hauling.</strong> Logs, brush, and branches are cleared from the site, including driveways and access roads.</p>
+    <p><strong>Follow-up options.</strong> If you need it, we can grind the stump, trim nearby trees that were weakened by the storm, or schedule a tree health inspection.</p>
   </div>
 </section>
 
