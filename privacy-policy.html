@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Privacy Policy | The Grizzly Tree Experts | Woodstock, GA</title>
+  <meta name="description" content="Privacy Policy for Grizzly Tree Experts, Woodstock, Georgia. Learn what information we collect, how we use it, and your choices." />
+  <link rel="canonical" href="https://thegrizzlytreeexperts.com/privacy-policy" />
+  <link rel="icon" href="https://thegrizzlytreeexperts.com/images/the-grizzly-tree-experts-ga-logo.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{--forest:#1B4332;--deep:#081C15;--pine:#2D6A4F;--moss:#74A57F;--gold:#D4A72C;--cream:#F5F1E6;--offwhite:#FCFCF9;--charcoal:#242A26;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;scroll-padding-top:5rem;}
+    body{background:var(--offwhite);color:var(--charcoal);font-family:'Inter',sans-serif;overflow-x:hidden;line-height:1.7;}
+
+    .hero{background:var(--deep);text-align:center;padding:8rem 2rem 5rem;position:relative;overflow:hidden;}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(45,106,79,.45) 0%,transparent 65%);pointer-events:none;}
+    .hero>*{position:relative;}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(212,167,44,.5);color:var(--gold);font-size:.72rem;font-weight:600;letter-spacing:.1em;padding:.45rem 1.2rem;border-radius:2rem;margin-bottom:1.6rem;text-transform:uppercase;opacity:0;animation:fadeUp .8s .2s ease forwards;}
+    .hero-badge::before{content:'●';color:var(--moss);font-size:.6rem;}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5.5vw,4.5rem);font-weight:900;color:var(--cream);line-height:1.05;margin:0 auto 1rem;opacity:0;animation:fadeUp .9s .4s ease forwards;}
+    .hero h1 em{color:var(--gold);font-style:normal;}
+    .hero p{color:rgba(245,241,230,.65);max-width:54ch;margin:0 auto;opacity:0;animation:fadeUp .9s .6s ease forwards;}
+    .hero-meta{display:inline-block;margin-top:1.6rem;color:var(--moss);font-size:.8rem;font-weight:600;letter-spacing:.04em;}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+
+    .btn-primary{display:inline-block;background:var(--gold);color:var(--deep);font-weight:700;font-size:.95rem;padding:.9rem 2.2rem;border-radius:3px;text-decoration:none;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 20px rgba(212,167,44,.3);}
+    .btn-primary:hover{background:#e8b82e;transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,167,44,.45);}
+    a:focus-visible,.btn-primary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+
+    .policy{background:var(--offwhite);padding:5rem 2rem 6rem;}
+    .policy-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:260px 1fr;gap:3.5rem;align-items:start;}
+    .toc{position:sticky;top:1.5rem;background:#fff;border:1px solid rgba(27,67,50,.1);border-radius:10px;padding:1.5rem 1.4rem;box-shadow:0 10px 40px rgba(8,28,21,.05);}
+    .toc h2{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--deep);margin-bottom:.8rem;}
+    .toc ol{list-style:none;counter-reset:t;}
+    .toc li{counter-increment:t;}
+    .toc a{display:flex;gap:.6rem;color:#5a6360;font-size:.84rem;text-decoration:none;padding:.32rem 0;line-height:1.4;transition:color .2s;}
+    .toc a::before{content:counter(t) '.';color:var(--pine);font-weight:600;min-width:1.4rem;}
+    .toc a:hover{color:var(--gold);}
+
+    .summary{background:var(--cream);border-left:4px solid var(--gold);border-radius:6px;padding:1.4rem 1.6rem;margin-bottom:2.5rem;color:#3d4642;font-size:.95rem;}
+    .summary strong{color:var(--deep);}
+    .sec{padding:2rem 0;border-bottom:1px solid rgba(27,67,50,.1);}
+    .sec:last-of-type{border-bottom:none;}
+    .sec h2{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,2.4vw,1.85rem);color:var(--deep);line-height:1.2;margin-bottom:.9rem;display:flex;gap:.8rem;align-items:center;}
+    .sec h2 .n{width:38px;height:38px;flex-shrink:0;border-radius:50%;background:var(--forest);color:var(--gold);font-size:1rem;display:flex;align-items:center;justify-content:center;}
+    .sec h3{font-size:1rem;font-weight:600;color:var(--forest);margin:1.1rem 0 .3rem;}
+    .sec p{color:#5a6360;font-size:.95rem;margin-bottom:.8rem;max-width:72ch;}
+    .sec ul{margin:0 0 .9rem 0;list-style:none;max-width:72ch;}
+    .sec li{position:relative;padding-left:1.4rem;color:#5a6360;font-size:.94rem;margin-bottom:.45rem;}
+    .sec li::before{content:'';position:absolute;left:.15rem;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold);}
+    .sec a{color:var(--forest);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(212,167,44,.6);}
+    .sec a:hover{color:var(--gold);}
+    .note{background:rgba(27,67,50,.06);border:1px solid rgba(27,67,50,.14);border-radius:8px;padding:1rem 1.2rem;margin:1rem 0;color:#3d4642;font-size:.9rem;max-width:72ch;}
+    .note strong{color:var(--deep);}
+
+    .contact-card{background:var(--deep);border-radius:12px;padding:2rem 2.2rem;margin-top:1rem;color:var(--moss);max-width:72ch;}
+    .contact-card h3{font-family:'Playfair Display',serif;color:var(--cream);font-size:1.25rem;margin:0 0 .6rem;}
+    .contact-card p{color:var(--moss);margin-bottom:.3rem;}
+    .contact-card a{color:var(--gold);border:none;}
+
+    .cta-section{background:var(--cream);padding:5rem 2rem;text-align:center;}
+    .cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.6rem);color:var(--deep);margin-bottom:.8rem;}
+    .cta-section p{color:#5a6360;max-width:46ch;margin:0 auto 1.6rem;}
+    .phone-big{display:inline-block;font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--forest);font-weight:700;text-decoration:none;margin-bottom:1.5rem;transition:color .2s;}
+    .phone-big:hover{color:var(--gold);}
+
+    @media(max-width:900px){.policy-inner{grid-template-columns:1fr;gap:2rem;}.toc{position:static;}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important;scroll-behavior:auto!important;}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","@id":"https://thegrizzlytreeexperts.com/privacy-policy#webpage","url":"https://thegrizzlytreeexperts.com/privacy-policy","name":"Privacy Policy | Grizzly Tree Experts","inLanguage":"en-US","dateModified":"2026-09-28","about":{"@id":"https://thegrizzlytreeexperts.com/#localbusiness"},"publisher":{"@id":"https://thegrizzlytreeexperts.com/#localbusiness"}}
+  </script>
+</head>
+<body>
+
+<script>
+  fetch('https://thegrizzlytreeexperts.com/header.html')
+    .then(r=>r.text()).then(h=>{const e=document.createElement('div');e.innerHTML=h;document.body.prepend(e);}).catch(()=>{});
+</script>
+
+<section class="hero">
+  <div class="hero-badge">Woodstock, GA &middot; Your Privacy Matters</div>
+  <h1>Privacy <em>Policy</em></h1>
+  <p>How Grizzly Tree Experts collects, uses, and protects your personal information when you visit our website or hire us for tree care in Georgia.</p>
+  <span class="hero-meta">Effective date: September 28, 2026 &nbsp;|&nbsp; Last updated: September 28, 2026</span>
+</section>
+
+<main class="policy">
+  <div class="policy-inner">
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#who">Who we are</a></li>
+        <li><a href="#collect">Information we collect</a></li>
+        <li><a href="#use">How we use it</a></li>
+        <li><a href="#share">How we share it</a></li>
+        <li><a href="#cookies">Cookies &amp; analytics</a></li>
+        <li><a href="#sms">Calls, texts &amp; email</a></li>
+        <li><a href="#security">Security &amp; retention</a></li>
+        <li><a href="#rights">Your choices &amp; rights</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#breach">Data breach notice</a></li>
+        <li><a href="#links">Third-party links</a></li>
+        <li><a href="#changes">Policy changes</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <div class="summary"><strong>The short version:</strong> We collect only what we need to give you a quote, schedule and complete tree work, and run our business. We never sell your personal information, and we never share your phone number or text-messaging opt-in with third parties for their marketing.</div>
+
+      <section class="sec" id="who">
+        <h2><span class="n">1</span>Who we are</h2>
+        <p>This Privacy Policy applies to Grizzly Tree Experts ("Grizzly Tree Experts," "we," "us," or "our"), a family-owned tree service company at 514 Arnold Mill Rd, Woodstock, GA 30188. It covers <a href="https://thegrizzlytreeexperts.com/">thegrizzlytreeexperts.com</a>, our phone lines, text and email communications, and the tree care services we provide to homeowners, HOAs, and businesses across Georgia.</p>
+        <p>By using our website or requesting our services, you agree to the practices described here. If you do not agree, please do not use the site.</p>
+      </section>
+
+      <section class="sec" id="collect">
+        <h2><span class="n">2</span>Information we collect</h2>
+        <h3>Information you give us</h3>
+        <ul>
+          <li>Name, phone number, email address, and service address when you request a free estimate, call us, or fill out a form.</li>
+          <li>Details about your trees and property, such as photos, descriptions, access notes, and gate or pet information.</li>
+          <li>Billing details and payment records when you pay us. Card payments are handled by our payment processors; we do not store full card numbers.</li>
+          <li>Messages, reviews, and any other information you choose to send us.</li>
+        </ul>
+        <h3>Information collected automatically</h3>
+        <ul>
+          <li>Device and browser type, operating system, IP address, approximate location, pages viewed, referring website, and time spent on the site.</li>
+          <li>Call information, such as your phone number, call time, and duration, when you contact us by phone.</li>
+        </ul>
+        <h3>Information from other sources</h3>
+        <ul>
+          <li>Lead and review platforms, advertising platforms, and business directories where you contacted or reviewed us.</li>
+          <li>Publicly available property or permitting information relevant to your job.</li>
+        </ul>
+      </section>
+
+      <section class="sec" id="use">
+        <h2><span class="n">3</span>How we use your information</h2>
+        <ul>
+          <li>Respond to requests, prepare estimates, and schedule and complete tree work, including emergency response.</li>
+          <li>Send invoices, process payments, and keep business, tax, and insurance records.</li>
+          <li>Confirm appointments, send service updates, and follow up after a job.</li>
+          <li>Send promotions or seasonal reminders where you have agreed to receive them.</li>
+          <li>Improve our website, services, and advertising, and understand how visitors find us.</li>
+          <li>Protect our business, prevent fraud and misuse, and comply with legal obligations.</li>
+        </ul>
+      </section>
+
+      <section class="sec" id="share">
+        <h2><span class="n">4</span>How we share your information</h2>
+        <p><strong>We do not sell your personal information.</strong> We share it only in these limited situations:</p>
+        <ul>
+          <li><strong>Service providers</strong> that work on our behalf, such as website hosting, scheduling and CRM software, payment processing, email and messaging platforms, and analytics. They may use your information only to perform services for us.</li>
+          <li><strong>Crew members and subcontractors</strong> who need your address and job details to complete your work.</li>
+          <li><strong>Insurance providers, professional advisors, and government authorities</strong> where required for claims, audits, permits, or compliance.</li>
+          <li><strong>Legal reasons:</strong> to comply with law, respond to a valid subpoena or court order, or protect our rights, property, or safety.</li>
+          <li><strong>Business transfers:</strong> if we merge with, or sell part of our business to, another company, your information may transfer as part of that transaction.</li>
+        </ul>
+      </section>
+
+      <section class="sec" id="cookies">
+        <h2><span class="n">5</span>Cookies &amp; analytics</h2>
+        <p>Our website may use cookies, pixels, and similar technologies to keep the site working, measure traffic, and understand which of our services and advertisements are most useful. Analytics and advertising tools (for example, Google Analytics or ad conversion tracking) may collect information about your visit and may combine it with data from other sites.</p>
+        <p>You can block or delete cookies in your browser settings, though parts of the site may not work as expected. You may also opt out of Google Analytics with the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics opt-out add-on</a>. Where your browser sends a Global Privacy Control (GPC) signal, we treat it as a request to opt out of sharing for targeted advertising. Our site does not otherwise respond to "Do Not Track" signals.</p>
+      </section>
+
+      <section class="sec" id="sms">
+        <h2><span class="n">6</span>Calls, text messages &amp; email</h2>
+        <p>If you give us your phone number, we may call or text you about your estimate, appointment, or service. With your prior express consent, we may also send promotional messages. Consent to receive marketing texts is never a condition of purchasing our services.</p>
+        <ul>
+          <li>Message frequency varies. Message and data rates may apply.</li>
+          <li>Reply <strong>STOP</strong> to any text to opt out, or <strong>HELP</strong> for help.</li>
+          <li>Mobile opt-in data and consent are <strong>not</strong> shared with third parties or affiliates for their marketing purposes.</li>
+          <li>Every marketing email includes an unsubscribe link. We honor opt-out requests within 10 business days, as required by the federal CAN-SPAM Act.</li>
+          <li>We follow the Telephone Consumer Protection Act (TCPA) and honor internal do-not-call requests.</li>
+        </ul>
+      </section>
+
+      <section class="sec" id="security">
+        <h2><span class="n">7</span>Security &amp; retention</h2>
+        <p>We use reasonable administrative, technical, and physical safeguards to protect your information, including encrypted connections (HTTPS), access controls, and vetted service providers. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+        <p>We keep personal information only as long as needed for the purposes above, including estimates, warranties, and tax, insurance, and legal record-keeping. When it is no longer needed, we delete or de-identify it.</p>
+      </section>
+
+      <section class="sec" id="rights">
+        <h2><span class="n">8</span>Your choices &amp; rights</h2>
+        <p>Georgia does not currently have a comprehensive consumer privacy statute. We nonetheless honor the following requests from any customer or visitor, wherever you live:</p>
+        <ul>
+          <li><strong>Access:</strong> ask what personal information we hold about you.</li>
+          <li><strong>Correction:</strong> ask us to fix inaccurate or incomplete information.</li>
+          <li><strong>Deletion:</strong> ask us to delete your information, subject to records we must keep by law.</li>
+          <li><strong>Opt out:</strong> unsubscribe from marketing emails or texts, and opt out of sharing for targeted advertising.</li>
+        </ul>
+        <p>To make a request, contact us using the details in <a href="#contact">Section 13</a>. We may need to verify your identity first and will respond within 45 days.</p>
+        <div class="note"><strong>Visitors outside Georgia.</strong> If you live in a state with its own privacy law (for example, California), you may have additional rights, such as knowing the categories of data we collect and requesting that we not sell or share it. We do not sell personal information. Send your request to us and we will handle it in line with the law that applies to you. We will not discriminate against you for exercising your rights.</div>
+        <p>Our practices are also governed by the Georgia Fair Business Practices Act (O.C.G.A. § 10-1-390 et seq.) and the Federal Trade Commission Act, which prohibit unfair or deceptive practices, including in how we describe our data handling.</p>
+      </section>
+
+      <section class="sec" id="children">
+        <h2><span class="n">9</span>Children's privacy</h2>
+        <p>Our website and services are directed to adults. We do not knowingly collect personal information from children under 13, in line with the Children's Online Privacy Protection Act (COPPA). If you believe a child has given us information, contact us and we will delete it promptly.</p>
+      </section>
+
+      <section class="sec" id="breach">
+        <h2><span class="n">10</span>Data breach notification</h2>
+        <p>If a security breach affects your personal information, we will notify you as required by the Georgia Personal Identity Protection Act (O.C.G.A. § 10-1-910 et seq.) and any other applicable law, in the most expedient time possible and without unreasonable delay.</p>
+      </section>
+
+      <section class="sec" id="links">
+        <h2><span class="n">11</span>Third-party links</h2>
+        <p>Our site may link to other websites, such as Google Maps, social media, and business directories. We do not control their content or privacy practices and encourage you to read their policies.</p>
+      </section>
+
+      <section class="sec" id="changes">
+        <h2><span class="n">12</span>Changes to this policy</h2>
+        <p>We may update this policy from time to time. When we do, we will post the new version here and change the "Last updated" date above. If changes are significant, we will make a reasonable effort to notify you. Continued use of our site after an update means you accept the revised policy.</p>
+      </section>
+
+      <section class="sec" id="contact">
+        <h2><span class="n">13</span>Contact us</h2>
+        <p>Questions, requests, or concerns about your privacy? Reach us any time.</p>
+        <div class="contact-card">
+          <h3>Grizzly Tree Experts</h3>
+          <p>514 Arnold Mill Rd, Woodstock, GA 30188</p>
+          <p>Phone: <a href="tel:+18444430150">(844) 443-0150</a></p>
+          <p>Hours: Monday to Saturday, 8:00 AM to 6:00 PM (24/7 emergency line)</p>
+        </div>
+      </section>
+    </article>
+  </div>
+</main>
+
+<section class="cta-section">
+  <h2>Questions? We're a Phone Call Away</h2>
+  <p>Talk to a real person at Grizzly Tree Experts about your privacy or your next tree project.</p>
+  <a href="tel:+18444430150" class="phone-big">(844) 443-0150</a><br/>
+  <a href="tel:+18444430150" class="btn-primary">Get a Free Estimate</a>
+</section>
+
+<script>
+  fetch('https://thegrizzlytreeexperts.com/footer.html')
+    .then(r=>r.text()).then(h=>{const e=document.createElement('div');e.innerHTML=h;document.body.appendChild(e);}).catch(()=>{});
+</script>
+</body>
+</html>
