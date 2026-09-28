@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>The Grizzly Tree Experts | Woodstock, GA</title>
-  <link rel="canonical" href="https://thegrizzlytreeexperts.com" />
   <link rel="icon" href="https://thegrizzlytreeexperts.com/images/the-grizzly-tree-experts-ga-logo.webp" type="image/webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +19,10 @@
 
     /* ══ HERO ══ */
     .hero{min-height:100vh;background:var(--deep);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;position:relative;overflow:hidden;}
+    .hero{width:100%;padding:6rem 1.25rem 2rem;}
+    .hero>*:not(.hero-ring):not(.scroll-hint){margin-left:auto;margin-right:auto;max-width:100%;}
+    .hero-badge,.hero-tags,.hero-ctas{justify-content:center;}
+    .hero-tags,.hero-ctas{width:100%;}
     .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 90%,rgba(45,106,79,0.4) 0%,transparent 65%);pointer-events:none;}
     .hero-ring{position:absolute;border-radius:50%;border:1px solid rgba(116,165,127,0.08);animation:ringPulse 6s ease-in-out infinite;pointer-events:none;}
     .hero-ring:nth-child(1){width:400px;height:400px;bottom:-100px;left:50%;transform:translateX(-50%);}
@@ -28,7 +31,7 @@
     @keyframes ringPulse{0%,100%{opacity:.3;transform:translateX(-50%) scale(1);}50%{opacity:.7;transform:translateX(-50%) scale(1.04);}}
     .hero-badge{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(212,167,44,.5);color:var(--gold);font-size:.72rem;font-weight:600;letter-spacing:.1em;padding:.45rem 1.2rem;border-radius:2rem;margin-bottom:2rem;text-transform:uppercase;opacity:0;animation:fadeUp .8s .3s ease forwards;}
     .hero-badge::before{content:'●';color:var(--moss);font-size:.6rem;}
-    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,6.5rem);font-weight:900;color:var(--cream);line-height:1.0;max-width:12ch;margin:0 auto 1.2rem;opacity:0;animation:fadeUp .9s .6s ease forwards;}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,6.5rem);font-weight:900;color:var(--cream);line-height:1.0;width:100%;max-width:none;margin:0 auto 1.2rem;text-align:center;opacity:0;animation:fadeUp .9s .6s ease forwards;}
     .hero h1 em{color:var(--gold);font-style:normal;display:block;}
     /* Tagline badges row */
     .hero-tags{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.4rem;opacity:0;animation:fadeUp .9s .75s ease forwards;}
@@ -38,8 +41,8 @@
     @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
     .btn-primary{display:inline-block;background:var(--gold);color:var(--deep);font-family:'Inter',sans-serif;font-weight:700;font-size:.95rem;padding:.9rem 2.2rem;border:none;border-radius:3px;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 20px rgba(212,167,44,.3);}
     .btn-primary:hover{background:#e8b82e;transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,167,44,.45);}
-    .btn-outline{display:inline-block;background:transparent;color:var(--cream);font-family:'Inter',sans-serif;font-size:.95rem;padding:.9rem 2.2rem;border:1.5px solid rgba(245,241,230,.25);border-radius:3px;cursor:pointer;text-decoration:none;transition:border-color .2s,background .2s;}
-    .btn-outline:hover{border-color:var(--cream);background:rgba(255,255,255,.05);}
+    .btn-outline{display:inline-block;background:var(--forest);color:var(--cream);font-family:'Inter',sans-serif;font-weight:600;font-size:.95rem;padding:.9rem 2.2rem;border:2px solid var(--gold);border-radius:3px;cursor:pointer;text-decoration:none;transition:border-color .2s,background .2s,color .2s;}
+    .btn-outline:hover{background:var(--gold);border-color:var(--gold);color:var(--deep);}
     .scroll-hint{position:absolute;bottom:2rem;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:.4rem;color:rgba(245,241,230,.35);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;opacity:0;animation:fadeUp 1s 1.6s ease forwards;}
     .scroll-needle{width:1px;height:48px;background:linear-gradient(to bottom,transparent,var(--gold));animation:needleDrop 2s ease-in-out infinite;}
     @keyframes needleDrop{0%,100%{transform:scaleY(.5) translateY(-8px);opacity:.4;}50%{transform:scaleY(1) translateY(0);opacity:1;}}
@@ -663,8 +666,12 @@
 <body>
 
 <script>
-  fetch('/header.html')
-    .then(r=>r.text()).then(h=>{const e=document.createElement('div');e.innerHTML=h;document.body.prepend(e);}).catch(()=>{});
+  /* HEADER — loads /header.html (same site), falls back to the live URL */
+  (function(){
+    function load(u){return fetch(u).then(function(r){if(!r.ok)throw 0;return r.text();});}
+    load('/header.html').catch(function(){return load('https://thegrizzlytreeexperts.com/header.html');})
+      .then(function(h){var e=document.createElement('div');e.innerHTML=h;document.body.prepend(e);}).catch(function(){});
+  })();
 </script>
 
 <!-- ══ HERO ══ -->
@@ -1198,8 +1205,12 @@
 </section>
 
 <script>
-  fetch('https://thegrizzlytreeexperts.com/footer.html')
-    .then(r=>r.text()).then(h=>{const e=document.createElement('div');e.innerHTML=h;document.body.appendChild(e);}).catch(()=>{});
+  /* FOOTER — loads /footer.html (same site), falls back to the live URL */
+  (function(){
+    function load(u){return fetch(u).then(function(r){if(!r.ok)throw 0;return r.text();});}
+    load('/footer.html').catch(function(){return load('https://thegrizzlytreeexperts.com/footer.html');})
+      .then(function(h){var e=document.createElement('div');e.innerHTML=h;document.body.appendChild(e);}).catch(function(){});
+  })();
 </script>
 
 <!-- ══ SCRIPTS ══ -->
