@@ -1,0 +1,96 @@
+<!-- ══ HEADER (drop-in fragment: no <html>/<body>, no <script> needed) ══ -->
+<!-- Palette: #081C15 Deep Evergreen (nav) · #1B4332 Forest · #D4A72C Gold · #F5F1E6 Cream -->
+<style>
+  .gte-header{
+    --gte-forest:#1B4332;--gte-deep:#081C15;--gte-gold:#D4A72C;--gte-cream:#F5F1E6;
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    background:var(--gte-deep);
+    border-bottom:3px solid var(--gte-gold);
+    box-shadow:0 6px 28px rgba(0,0,0,.45);
+    font-family:'Inter',system-ui,sans-serif;
+    padding-top:env(safe-area-inset-top,0px);
+  }
+  .gte-header *,.gte-header *::before,.gte-header *::after{box-sizing:border-box;margin:0;padding:0;}
+  .gte-inner{max-width:1240px;margin:0 auto;height:72px;padding:0 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;}
+
+  /* Logo */
+  .gte-logo{display:flex;align-items:center;gap:.7rem;text-decoration:none;flex-shrink:0;}
+  .gte-logo img{height:48px;width:auto;display:block;}
+  .gte-logo-text{display:flex;flex-direction:column;line-height:1.05;}
+  .gte-logo-text strong{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:1.15rem;color:var(--gte-cream);letter-spacing:.01em;}
+  .gte-logo-text span{font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gte-gold);margin-top:.2rem;}
+
+  /* Nav */
+  .gte-nav{display:flex;align-items:center;gap:.25rem;}
+  .gte-nav a{color:var(--gte-cream);text-decoration:none;font-size:.9rem;font-weight:600;padding:.55rem .85rem;border-radius:3px;position:relative;transition:color .2s,background .2s;}
+  .gte-nav a:hover{color:var(--gte-gold);background:var(--gte-forest);}
+  .gte-nav a::after{content:'';position:absolute;left:.85rem;right:.85rem;bottom:.25rem;height:2px;background:var(--gte-gold);transform:scaleX(0);transform-origin:left;transition:transform .25s;}
+  .gte-nav a:hover::after{transform:scaleX(1);}
+
+  /* CTA — same look as your hero "Call" button */
+  .gte-cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--gte-gold);color:var(--gte-deep);text-decoration:none;font-weight:700;font-size:.9rem;padding:.65rem 1.3rem;border-radius:3px;white-space:nowrap;box-shadow:0 4px 20px rgba(212,167,44,.3);transition:background .2s,transform .15s,box-shadow .2s;}
+  .gte-cta:hover{background:#e8b82e;transform:translateY(-1px);box-shadow:0 8px 28px rgba(212,167,44,.5);}
+  .gte-cta-txt{display:flex;flex-direction:column;line-height:1.1;}
+  .gte-cta small{display:block;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.7;line-height:1;margin-bottom:.15rem;}
+
+  /* Mobile toggle (CSS-only, works when injected via fetch/innerHTML) */
+  .gte-toggle{display:none;}
+  .gte-burger{display:none;width:44px;height:44px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px;border-radius:3px;border:1px solid rgba(245,241,230,.25);}
+  .gte-burger span{display:block;width:22px;height:2.5px;background:var(--gte-cream);border-radius:2px;transition:transform .25s,opacity .2s;}
+
+  @media(max-width:960px){
+    .gte-burger{display:flex;order:3;}
+    .gte-cta{order:2;margin-left:auto;padding:.6rem 1rem;}
+    .gte-cta small{display:none;}
+    .gte-nav{
+      position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;
+      background:var(--gte-deep);border-bottom:3px solid var(--gte-gold);
+      max-height:0;overflow:hidden;transition:max-height .3s ease;
+      box-shadow:0 14px 28px rgba(0,0,0,.5);
+    }
+    .gte-nav a{padding:1rem 1.5rem;border-top:1px solid rgba(245,241,230,.1);font-size:1rem;border-radius:0;}
+    .gte-nav a::after{display:none;}
+    .gte-toggle:checked ~ .gte-nav{max-height:480px;}
+    .gte-toggle:checked ~ .gte-burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg);}
+    .gte-toggle:checked ~ .gte-burger span:nth-child(2){opacity:0;}
+    .gte-toggle:checked ~ .gte-burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg);}
+  }
+  @media(max-width:480px){
+    .gte-inner{height:64px;padding:0 .9rem;gap:.6rem;}
+    .gte-logo img{height:40px;}
+    .gte-logo-text strong{font-size:.95rem;}
+    .gte-logo-text span{display:none;}
+    .gte-cta{font-size:.82rem;padding:.55rem .8rem;}
+  }
+</style>
+
+<header class="gte-header" role="banner">
+  <div class="gte-inner">
+    <input type="checkbox" id="gte-toggle" class="gte-toggle" aria-label="Toggle menu" />
+
+    <a class="gte-logo" href="/" aria-label="The Grizzly Tree Experts – Home">
+      <img src="https://thegrizzlytreeexperts.com/images/the-grizzly-tree-experts-ga-logo.webp" alt="The Grizzly Tree Experts logo" width="48" height="48" />
+      <span class="gte-logo-text">
+        <strong>The Grizzly Tree Experts</strong>
+        <span>Woodstock, GA</span>
+      </span>
+    </a>
+
+    <nav class="gte-nav" aria-label="Main navigation">
+      <a href="/#why">Why Us</a>
+      <a href="/#services">Services</a>
+      <a href="/#local">Service Area</a>
+      <a href="/#procedure">Our Process</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+
+    <a class="gte-cta" href="tel:+18444430150">
+      <span aria-hidden="true">&#9742;</span>
+      <span class="gte-cta-txt"><small>24/7 Emergency</small>(844) 443-0150</span>
+    </a>
+
+    <label for="gte-toggle" class="gte-burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+</header>
