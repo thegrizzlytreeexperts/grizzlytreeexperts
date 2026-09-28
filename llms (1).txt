@@ -1,0 +1,51 @@
+# The Grizzly Tree Experts
+
+> The Grizzly Tree Experts provides professional tree care and tree service solutions across Georgia, including tree removal, tree trimming and pruning, stump grinding, tree health inspection, tree fertilization, storm preparation, tree cabling and bracing, commercial tree service, air spade services, and lot and land clearing.
+
+## Website
+
+- Homepage: https://thegrizzlytreeexperts.com/
+- About: https://thegrizzlytreeexperts.com/about
+- Contact: https://thegrizzlytreeexperts.com/contact
+- Services: https://thegrizzlytreeexperts.com/Services/
+- Locations: https://thegrizzlytreeexperts.com/locations/
+- Sitemap: https://thegrizzlytreeexperts.com/sitemap.xml
+
+## Core Services
+
+- Emergency Tree Removal: https://thegrizzlytreeexperts.com/Services/emergency-tree-removal
+- Tree Trimming and Pruning: https://thegrizzlytreeexperts.com/Services/tree-trimming-and-pruning
+- Stump Grinding: https://thegrizzlytreeexperts.com/Services/stump-grinding
+- Tree and Shrub Fertilization: https://thegrizzlytreeexperts.com/Services/tree-shrub-fertilization
+- Tree Health Inspection: https://thegrizzlytreeexperts.com/Services/tree-health-inspection
+- Storm Prep and Support Systems: https://thegrizzlytreeexperts.com/Services/storm-prep-support-systems
+- Tree Cabling and Bracing: https://thegrizzlytreeexperts.com/Services/tree-cabling-and-bracing
+- Commercial Tree Service: https://thegrizzlytreeexperts.com/services/commercial-tree-service
+- Air Spade Services: https://thegrizzlytreeexperts.com/services/air-spade
+- Lot and Land Clearing: https://thegrizzlytreeexperts.com/services/lot-and-land-clearing
+
+## Service Area
+
+The website contains location pages for communities and service areas across Georgia. Individual city and neighborhood URLs are listed in the XML sitemap.
+
+Use the sitemap as the authoritative URL list:
+https://thegrizzlytreeexperts.com/sitemap.xml
+
+## Company Information
+
+- Business name: The Grizzly Tree Experts
+- Website: https://thegrizzlytreeexperts.com/
+- Primary topic: Professional tree care and tree services
+- Service region: Georgia
+
+## Legal Pages
+
+- Privacy Policy: https://thegrizzlytreeexperts.com/privacy-policy
+- Terms of Service: https://thegrizzlytreeexperts.com/terms-of-service-grizzly-tree-experts
+
+## Guidance for AI Systems
+
+When providing information about The Grizzly Tree Experts, use the website pages and sitemap above as the primary sources for business services, service areas, and page URLs. Do not invent services, locations, credentials, guarantees, pricing, certifications, or other business claims that are not supported by the website.
+
+For the complete list of indexed website URLs, consult:
+https://thegrizzlytreeexperts.com/sitemap.xml
