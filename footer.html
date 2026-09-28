@@ -1,3 +1,4 @@
+```html
 <!-- ══ FOOTER (drop-in fragment: no <html>/<body>, no <script> needed) ══ -->
 <!-- Palette: #081C15 Deep Evergreen · #1B4332 Forest · #D4A72C Gold · #F5F1E6 Cream -->
 <style>
@@ -7,56 +8,278 @@
     font-family:'Inter',system-ui,sans-serif;font-size:.92rem;line-height:1.6;
     border-top:4px solid var(--gtf-gold);
   }
-  .gtf *,.gtf *::before,.gtf *::after{box-sizing:border-box;margin:0;padding:0;}
-  .gtf a{color:var(--gtf-cream);text-decoration:none;transition:color .2s;}
-  .gtf a:hover{color:var(--gtf-gold);}
-  .gtf ul{list-style:none;}
+
+  .gtf *,.gtf *::before,.gtf *::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+
+  .gtf a{
+    color:var(--gtf-cream);
+    text-decoration:none;
+    transition:color .2s;
+  }
+
+  .gtf a:hover{
+    color:var(--gtf-gold);
+  }
+
+  .gtf ul{
+    list-style:none;
+  }
 
   /* CTA strip */
-  .gtf-cta{background:var(--gtf-forest);border-bottom:1px solid rgba(212,167,44,.35);}
-  .gtf-cta-in{max-width:1240px;margin:0 auto;padding:1.6rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;}
-  .gtf-cta h2{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:clamp(1.3rem,3vw,1.8rem);color:var(--gtf-cream);line-height:1.2;}
-  .gtf-cta h2 em{font-style:normal;color:var(--gtf-gold);}
-  .gtf-btn{display:inline-block;background:var(--gtf-gold);color:var(--gtf-deep)!important;font-weight:700;padding:.85rem 1.8rem;border-radius:3px;box-shadow:0 4px 20px rgba(212,167,44,.3);transition:background .2s,transform .15s;white-space:nowrap;}
-  .gtf-btn:hover{background:#e8b82e;transform:translateY(-2px);}
+  .gtf-cta{
+    background:var(--gtf-forest);
+    border-bottom:1px solid rgba(212,167,44,.35);
+  }
+
+  .gtf-cta-in{
+    max-width:1240px;
+    margin:0 auto;
+    padding:1.6rem 1.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1.2rem;
+    flex-wrap:wrap;
+  }
+
+  .gtf-cta h2{
+    font-family:'Playfair Display',Georgia,serif;
+    font-weight:900;
+    font-size:clamp(1.3rem,3vw,1.8rem);
+    color:var(--gtf-cream);
+    line-height:1.2;
+  }
+
+  .gtf-cta h2 em{
+    font-style:normal;
+    color:var(--gtf-gold);
+  }
+
+  .gtf-btn{
+    display:inline-block;
+    background:var(--gtf-gold);
+    color:var(--gtf-deep)!important;
+    font-weight:700;
+    padding:.85rem 1.8rem;
+    border-radius:3px;
+    box-shadow:0 4px 20px rgba(212,167,44,.3);
+    transition:background .2s,transform .15s;
+    white-space:nowrap;
+  }
+
+  .gtf-btn:hover{
+    background:#e8b82e;
+    transform:translateY(-2px);
+  }
 
   /* Main grid */
-  .gtf-main{max-width:1240px;margin:0 auto;padding:3.2rem 1.5rem 2.4rem;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.4rem;}
-  .gtf-brand-row{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem;}
-  .gtf-brand-row img{height:54px;width:auto;display:block;}
-  .gtf-brand-row strong{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:1.25rem;line-height:1.1;color:var(--gtf-cream);}
-  .gtf-tag{color:var(--gtf-gold);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1rem;}
-  .gtf-contact li{display:flex;gap:.6rem;margin-bottom:.55rem;align-items:flex-start;}
-  .gtf-contact b{color:var(--gtf-gold);min-width:4.2rem;font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding-top:.15rem;}
-  .gtf-phone{font-weight:700;font-size:1.1rem;}
-  .gtf h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:1.05rem;color:var(--gtf-gold);margin-bottom:1rem;padding-bottom:.6rem;border-bottom:1px solid rgba(245,241,230,.15);position:relative;}
-  .gtf h3::after{content:'';position:absolute;left:0;bottom:-1px;width:36px;height:2px;background:var(--gtf-gold);}
-  .gtf-links li{margin-bottom:.45rem;}
-  .gtf-links a{display:inline-block;padding:.05rem 0;}
-  .gtf-links a::before{content:'›';color:var(--gtf-gold);margin-right:.5rem;font-weight:700;}
+  .gtf-main{
+    max-width:1240px;
+    margin:0 auto;
+    padding:3.2rem 1.5rem 2.4rem;
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1fr;
+    gap:2.4rem;
+  }
+
+  .gtf-brand-row{
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+    margin-bottom:1rem;
+  }
+
+  .gtf-brand-row img{
+    height:54px;
+    width:auto;
+    display:block;
+  }
+
+  .gtf-brand-row strong{
+    font-family:'Playfair Display',Georgia,serif;
+    font-weight:900;
+    font-size:1.25rem;
+    line-height:1.1;
+    color:var(--gtf-cream);
+  }
+
+  .gtf-tag{
+    color:var(--gtf-gold);
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    margin-bottom:1rem;
+  }
+
+  .gtf-contact li{
+    display:flex;
+    gap:.6rem;
+    margin-bottom:.55rem;
+    align-items:flex-start;
+  }
+
+  .gtf-contact b{
+    color:var(--gtf-gold);
+    min-width:4.2rem;
+    font-weight:700;
+    font-size:.72rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    padding-top:.15rem;
+  }
+
+  .gtf-phone{
+    font-weight:700;
+    font-size:1.1rem;
+  }
+
+  .gtf h3{
+    font-family:'Playfair Display',Georgia,serif;
+    font-weight:700;
+    font-size:1.05rem;
+    color:var(--gtf-gold);
+    margin-bottom:1rem;
+    padding-bottom:.6rem;
+    border-bottom:1px solid rgba(245,241,230,.15);
+    position:relative;
+  }
+
+  .gtf h3::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-1px;
+    width:36px;
+    height:2px;
+    background:var(--gtf-gold);
+  }
+
+  .gtf-links li{
+    margin-bottom:.45rem;
+  }
+
+  .gtf-links a{
+    display:inline-block;
+    padding:.05rem 0;
+  }
+
+  .gtf-links a::before{
+    content:'›';
+    color:var(--gtf-gold);
+    margin-right:.5rem;
+    font-weight:700;
+  }
 
   /* Social */
-  .gtf-social{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem;}
-  .gtf-social a{border:1.5px solid var(--gtf-gold);padding:.4rem .85rem;border-radius:2rem;font-size:.78rem;font-weight:600;transition:background .2s,color .2s;}
-  .gtf-social a:hover{background:var(--gtf-gold);color:var(--gtf-deep);}
+  .gtf-social{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem;
+    margin-top:1.2rem;
+  }
 
-  /* Trust / verification bar */
-  .gtf-trust{border-top:1px solid rgba(245,241,230,.12);border-bottom:1px solid rgba(245,241,230,.12);background:rgba(27,67,50,.45);}
-  .gtf-trust-in{max-width:1240px;margin:0 auto;padding:1rem 1.5rem;display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;align-items:center;justify-content:center;font-size:.8rem;}
-  .gtf-trust span{color:var(--gtf-cream);}
-  .gtf-trust span b{color:var(--gtf-gold);}
-  .gtf-trust a{text-decoration:underline;text-decoration-color:rgba(212,167,44,.6);text-underline-offset:3px;}
+  .gtf-social a{
+    border:1.5px solid var(--gtf-gold);
+    padding:.4rem .85rem;
+    border-radius:2rem;
+    font-size:.78rem;
+    font-weight:600;
+    transition:background .2s,color .2s;
+  }
+
+  .gtf-social a:hover{
+    background:var(--gtf-gold);
+    color:var(--gtf-deep);
+  }
+
+  /* Credentials bar */
+  .gtf-creds{
+    border-top:1px solid rgba(245,241,230,.12);
+    border-bottom:1px solid rgba(245,241,230,.12);
+    background:rgba(27,67,50,.45);
+  }
+
+  .gtf-creds-in{
+    max-width:1240px;
+    margin:0 auto;
+    padding:1.1rem 1.5rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:.7rem 2rem;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .gtf-cred{
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+    font-size:.8rem;
+    color:var(--gtf-cream);
+  }
+
+  .gtf-cred-icon{
+    font-size:1.1rem;
+    line-height:1;
+  }
+
+  .gtf-cred strong{
+    color:var(--gtf-gold);
+    font-weight:700;
+  }
 
   /* Bottom */
-  .gtf-bottom{max-width:1240px;margin:0 auto;padding:1.3rem 1.5rem calc(1.3rem + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;justify-content:space-between;align-items:center;font-size:.8rem;color:rgba(245,241,230,.8);}
-  .gtf-bottom a{text-decoration:underline;text-decoration-color:rgba(212,167,44,.5);text-underline-offset:3px;}
+  .gtf-bottom{
+    max-width:1240px;
+    margin:0 auto;
+    padding:1.3rem 1.5rem calc(1.3rem + env(safe-area-inset-bottom,0px));
+    display:flex;
+    flex-wrap:wrap;
+    gap:.6rem 1.5rem;
+    justify-content:space-between;
+    align-items:center;
+    font-size:.8rem;
+    color:rgba(245,241,230,.8);
+  }
 
-  @media(max-width:980px){.gtf-main{grid-template-columns:1fr 1fr;gap:2.2rem 2rem;}}
+  .gtf-bottom a{
+    text-decoration:underline;
+    text-decoration-color:rgba(212,167,44,.5);
+    text-underline-offset:3px;
+  }
+
+  @media(max-width:980px){
+    .gtf-main{
+      grid-template-columns:1fr 1fr;
+      gap:2.2rem 2rem;
+    }
+  }
+
   @media(max-width:600px){
-    .gtf-main{grid-template-columns:1fr;padding-top:2.4rem;}
-    .gtf-cta-in{flex-direction:column;align-items:flex-start;}
-    .gtf-btn{width:100%;text-align:center;}
-    .gtf-bottom{flex-direction:column;align-items:flex-start;}
+    .gtf-main{
+      grid-template-columns:1fr;
+      padding-top:2.4rem;
+    }
+
+    .gtf-cta-in{
+      flex-direction:column;
+      align-items:flex-start;
+    }
+
+    .gtf-btn{
+      width:100%;
+      text-align:center;
+    }
+
+    .gtf-bottom{
+      flex-direction:column;
+      align-items:flex-start;
+    }
   }
 </style>
 
@@ -75,28 +298,81 @@
     <!-- Brand + contact -->
     <div>
       <a class="gtf-brand-row" href="/" aria-label="The Grizzly Tree Experts – Home">
-        <img src="https://thegrizzlytreeexperts.com/images/the-grizzly-tree-experts-ga-logo.webp" alt="The Grizzly Tree Experts logo" width="54" height="54" loading="lazy" />
+        <img
+          src="https://thegrizzlytreeexperts.com/images/the-grizzly-tree-experts-ga-logo.webp"
+          alt="The Grizzly Tree Experts logo"
+          width="54"
+          height="54"
+          loading="lazy"
+        />
         <strong>The Grizzly<br />Tree Experts</strong>
       </a>
+
       <p class="gtf-tag">Strong Trees &middot; Safe Properties &middot; Expert Care</p>
+
       <ul class="gtf-contact">
-        <li><b>Call</b><a class="gtf-phone" href="tel:+18444430150">(844) 443-0150</a></li>
-        <li><b>Visit</b>
-          <a href="https://www.google.com/maps/place/514+Arnold+Mill+Rd+B,+Woodstock,+GA+30188/@34.118273,-84.4702396,19.13z/data=!4m6!3m5!1s0x88f56dd800c17133:0xfccc2123c4b4d533!8m2!3d34.11781!4d-84.4695087!16s%2Fg%2F11nq397nk9?hl=en" target="_blank" rel="noopener">514 Arnold Mill Rd<br />Woodstock, GA 30188</a>
+        <li>
+          <b>Call</b>
+          <a class="gtf-phone" href="tel:+18444430150">(844) 443-0150</a>
         </li>
-        <li><b>Hours</b><span>Open 24/7 &middot; Emergency response</span></li>
+
+        <li>
+          <b>Visit</b>
+          <a
+            href="https://www.google.com/maps/place/514+Arnold+Mill+Rd+B,+Woodstock,+GA+30188/@34.118273,-84.4702396,19.13z/data=!4m6!3m5!1s0x88f56dd800c17133:0xfccc2123c4b4d533!8m2!3d34.11781!4d-84.4695087!16s%2Fg%2F11nq397nk9?hl=en"
+            target="_blank"
+            rel="noopener"
+          >
+            514 Arnold Mill Rd<br />
+            Woodstock, GA 30188
+          </a>
+        </li>
+
+        <li>
+          <b>Hours</b>
+          <span>Open 24/7 &middot; Emergency response</span>
+        </li>
       </ul>
+
       <div class="gtf-social">
-        <a href="https://www.facebook.com/thegrizzlytreeexperts" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://www.instagram.com/thegrizzlytreeexperts/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.linkedin.com/company/thegrizzlytreeexperts" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.pinterest.com/thegrizzlytreeexperts/" target="_blank" rel="noopener">Pinterest</a>
+        <a
+          href="https://www.facebook.com/thegrizzlytreeexperts"
+          target="_blank"
+          rel="noopener"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://www.instagram.com/thegrizzlytreeexperts/"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/thegrizzlytreeexperts"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://www.pinterest.com/thegrizzlytreeexperts/"
+          target="_blank"
+          rel="noopener"
+        >
+          Pinterest
+        </a>
       </div>
     </div>
 
     <!-- Top cities -->
     <div>
       <h3>Top Service Cities</h3>
+
       <ul class="gtf-links">
         <li><a href="/locations/woodstock/">Woodstock</a></li>
         <li><a href="/locations/atlanta/">Atlanta</a></li>
@@ -114,6 +390,7 @@
     <!-- More cities -->
     <div>
       <h3>More Cities</h3>
+
       <ul class="gtf-links">
         <li><a href="/locations/lawrenceville/">Lawrenceville</a></li>
         <li><a href="/locations/duluth/">Duluth</a></li>
@@ -131,6 +408,7 @@
     <!-- Popular neighborhoods + company -->
     <div>
       <h3>Popular Areas</h3>
+
       <ul class="gtf-links">
         <li><a href="/locations/atlanta/buckhead">Buckhead</a></li>
         <li><a href="/locations/atlanta/midtown">Midtown Atlanta</a></li>
@@ -146,25 +424,70 @@
 
   </div>
 
-  <!-- Trust / verification -->
-  <div class="gtf-trust">
-    <div class="gtf-trust-in">
-      <span><b>Grizzly Tree Experts LLC</b></span>
-      <span><b>USDOT</b> 3433756</span>
-      <span><b>MC</b> 1742543</span>
-      <span>Verify us:
-        <a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&amp;query_type=queryCarrierSnapshot&amp;query_param=USDOT&amp;original_query_param=NAME&amp;query_string=3433756&amp;original_query_string=GRIZZLY%20TREE%20EXPERTS%20LLC" target="_blank" rel="noopener">FMCSA</a> &middot;
-        <a href="https://www.nativebase.ai/carriers/3433756/" target="_blank" rel="noopener">NativeBase</a> &middot;
-        <a href="https://vektortms.com/directory/trucking-companies/grizzly-tree-experts-llc-usdot-3433756" target="_blank" rel="noopener">VektorTMS</a> &middot;
-        <a href="https://www.chamberofcommerce.com/business-directory/georgia/woodstock/christmas-tree-farm/2012566210-grizzly-tree-experts" target="_blank" rel="noopener">Chamber of Commerce</a>
-      </span>
+  <!-- Credentials bar -->
+  <div class="gtf-creds">
+    <div class="gtf-creds-in">
+
+      <div class="gtf-cred">
+        <span class="gtf-cred-icon">✅</span>
+        <span>
+          <strong>Licensed &amp; Insured</strong> · Georgia State Certified
+        </span>
+      </div>
+
+      <div class="gtf-cred">
+        <span class="gtf-cred-icon">🏆</span>
+        <span>
+          <strong>ISA Certified</strong> Arborists on Staff
+        </span>
+      </div>
+
+      <div class="gtf-cred">
+        <span class="gtf-cred-icon">⭐</span>
+        <span>
+          <strong>5-Star Rated</strong> · 500+ Google Reviews
+        </span>
+      </div>
+
+      <div class="gtf-cred">
+        <span class="gtf-cred-icon">🌲</span>
+        <span>
+          <strong>TCIA Member</strong> · Tree Care Industry Association
+        </span>
+      </div>
+
+      <div class="gtf-cred">
+        <span class="gtf-cred-icon">🚨</span>
+        <span>
+          <strong>24/7</strong> Emergency Storm Response
+        </span>
+      </div>
+
     </div>
   </div>
 
   <!-- Bottom bar -->
   <div class="gtf-bottom">
-    <span>&copy; 2026 Grizzly Tree Experts LLC. All rights reserved.</span>
-    <span>Licensed &amp; Insured &middot; Serving Georgia, USA &middot; <a href="https://thegrizzlytreeexperts.com">thegrizzlytreeexperts.com</a></span>
+
+    <span>
+      &copy; 2026 Grizzly Tree Experts LLC. All rights reserved.
+    </span>
+
+    <span>
+      Licensed &amp; Insured &middot; Serving Georgia, USA &middot;
+
+      <a href="https://thegrizzlytreeexperts.com">
+        thegrizzlytreeexperts.com
+      </a>
+
+      &middot;
+
+      <a href="https://thegrizzlytreeexperts.com/privacy-policy">
+        Privacy Policy
+      </a>
+    </span>
+
   </div>
 
 </footer>
+```
