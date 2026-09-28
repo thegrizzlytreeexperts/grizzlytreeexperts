@@ -35,18 +35,18 @@
     .policy-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:260px 1fr;gap:3.5rem;align-items:start;}
     .toc{position:sticky;top:1.5rem;background:#fff;border:1px solid rgba(27,67,50,.1);border-radius:10px;padding:1.5rem 1.4rem;box-shadow:0 10px 40px rgba(8,28,21,.05);}
     .toc h2{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--deep);margin-bottom:.8rem;}
-    .toc ol{list-style:none;counter-reset:t;}
-    .toc li{counter-increment:t;}
-    .toc a{display:flex;gap:.6rem;color:#5a6360;font-size:.84rem;text-decoration:none;padding:.32rem 0;line-height:1.4;transition:color .2s;}
-    .toc a::before{content:counter(t) '.';color:var(--pine);font-weight:600;min-width:1.4rem;}
-    .toc a:hover{color:var(--gold);}
+    .policy .toc ol{display:block!important;flex-direction:column!important;list-style:none!important;counter-reset:t;margin:0;padding:0;width:100%;}
+    .policy .toc ol li{display:block!important;float:none!important;width:100%!important;margin:0;padding:0;counter-increment:t;}
+    .policy .toc ol li a{display:flex!important;gap:.6rem;width:100%;color:#5a6360;font-size:.84rem;font-weight:500;text-decoration:none;padding:.32rem 0;line-height:1.4;white-space:normal;transition:color .2s;}
+    .policy .toc ol li a::before{content:counter(t) '.';color:var(--pine);font-weight:600;min-width:1.6rem;flex-shrink:0;}
+    .policy .toc ol li a:hover{color:var(--gold);}
 
     .summary{background:var(--cream);border-left:4px solid var(--gold);border-radius:6px;padding:1.4rem 1.6rem;margin-bottom:2.5rem;color:#3d4642;font-size:.95rem;}
     .summary strong{color:var(--deep);}
     .sec{padding:2rem 0;border-bottom:1px solid rgba(27,67,50,.1);}
     .sec:last-of-type{border-bottom:none;}
     .sec h2{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,2.4vw,1.85rem);color:var(--deep);line-height:1.2;margin-bottom:.9rem;display:flex;gap:.8rem;align-items:center;}
-    .sec h2 .n{width:38px;height:38px;flex-shrink:0;border-radius:50%;background:var(--forest);color:var(--gold);font-size:1rem;display:flex;align-items:center;justify-content:center;}
+    .sec h2 .n{width:38px;height:38px;flex-shrink:0;border-radius:50%;background:var(--forest);color:var(--gold);font-family:'Inter',sans-serif;font-size:1rem!important;font-weight:700;line-height:1;display:flex;align-items:center;justify-content:center;}
     .sec h3{font-size:1rem;font-weight:600;color:var(--forest);margin:1.1rem 0 .3rem;}
     .sec p{color:#5a6360;font-size:.95rem;margin-bottom:.8rem;max-width:72ch;}
     .sec ul{margin:0 0 .9rem 0;list-style:none;max-width:72ch;}
@@ -92,7 +92,7 @@
 <main class="policy">
   <div class="policy-inner">
 
-    <nav class="toc" aria-label="Table of contents">
+    <div class="toc" role="navigation" aria-label="Table of contents">
       <h2>On this page</h2>
       <ol>
         <li><a href="#who">Who we are</a></li>
@@ -109,7 +109,7 @@
         <li><a href="#changes">Policy changes</a></li>
         <li><a href="#contact">Contact us</a></li>
       </ol>
-    </nav>
+    </div>
 
     <article>
       <div class="summary"><strong>The short version:</strong> We collect only what we need to give you a quote, schedule and complete tree work, and run our business. We never sell your personal information, and we never share your phone number or text-messaging opt-in with third parties for their marketing.</div>
