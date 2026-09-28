@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Terms of Service | The Grizzly Tree Experts</title>
+  <meta name="description" content="Terms of Service for The Grizzly Tree Experts — tree removal, trimming, stump grinding, and emergency tree services across Georgia, USA." />
+  <link rel="icon" href="https://thegrizzlytreeexperts.com/images/the-grizzly-tree-experts-ga-logo.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --forest:#1B4332;--deep:#081C15;--pine:#2D6A4F;--moss:#74A57F;
+      --gold:#D4A72C;--cream:#F5F1E6;--offwhite:#FCFCF9;--charcoal:#242A26;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--offwhite);color:var(--charcoal);font-family:'Inter',sans-serif;overflow-x:hidden;}
+
+    /* ══ PAGE HERO ══ */
+    .tos-hero{background:var(--deep);padding:8rem 2rem 6rem;text-align:center;position:relative;overflow:hidden;}
+    .tos-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(45,106,79,.35) 0%,transparent 60%);pointer-events:none;}
+    .tos-hero-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;}
+    .tos-badge{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(212,167,44,.5);color:var(--gold);font-size:.72rem;font-weight:600;letter-spacing:.1em;padding:.45rem 1.2rem;border-radius:2rem;margin-bottom:1.6rem;text-transform:uppercase;}
+    .tos-badge::before{content:'●';color:var(--moss);font-size:.6rem;}
+    .tos-hero h1{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(2.4rem,5vw,4rem);color:var(--cream);line-height:1.08;margin-bottom:1.2rem;}
+    .tos-hero p{color:rgba(245,241,230,.68);font-size:1.05rem;line-height:1.75;max-width:56ch;margin:0 auto;}
+    .tos-meta{margin-top:2rem;display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center;}
+    .tos-meta span{background:rgba(255,255,255,.05);border:1px solid rgba(116,165,127,.25);color:var(--moss);font-size:.78rem;font-weight:600;padding:.4rem 1rem;border-radius:2rem;}
+
+    /* ══ SHARED SECTION ══ */
+    .tos-section{padding:5rem 2rem;border-bottom:1px solid rgba(27,67,50,.08);}
+    .tos-section.dark{background:var(--deep);border-bottom:none;}
+    .tos-inner{max-width:880px;margin:0 auto;}
+    .tos-eyebrow{color:var(--pine);font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.6rem;}
+    .tos-section.dark .tos-eyebrow{color:var(--moss);}
+    .tos-h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.1rem);color:var(--deep);margin-bottom:.9rem;line-height:1.2;}
+    .tos-section.dark .tos-h2{color:var(--cream);}
+    .tos-lede{color:#5a6360;font-size:.98rem;line-height:1.75;max-width:68ch;margin-bottom:1.8rem;}
+    .tos-section.dark .tos-lede{color:rgba(245,241,230,.72);}
+
+    /* ══ TERM CARDS (reused why-card pattern) ══ */
+    .term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;}
+    .term-card{background:#fff;border:1px solid rgba(27,67,50,.1);border-radius:6px;padding:1.6rem 1.5rem;}
+    .tos-section.dark .term-card{background:rgba(255,255,255,.04);border-color:rgba(116,165,127,.15);}
+    .term-card h3{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--deep);margin-bottom:.5rem;}
+    .tos-section.dark .term-card h3{color:var(--cream);}
+    .term-card p{color:#5a6360;font-size:.88rem;line-height:1.65;}
+    .tos-section.dark .term-card p{color:rgba(116,165,127,.9);}
+
+    /* ══ CLAUSE LIST ══ */
+    .clause-block{margin-bottom:1.8rem;}
+    .clause-block:last-child{margin-bottom:0;}
+    .clause-block h4{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--forest);margin-bottom:.6rem;}
+    .tos-section.dark .clause-block h4{color:var(--gold);}
+    .clause-list{list-style:none;display:flex;flex-direction:column;gap:.55rem;}
+    .clause-list li{display:flex;gap:.7rem;align-items:flex-start;color:#5a6360;font-size:.92rem;line-height:1.6;}
+    .tos-section.dark .clause-list li{color:rgba(245,241,230,.72);}
+    .clause-list li::before{content:'';flex-shrink:0;width:6px;height:6px;border-radius:50%;background:var(--pine);margin-top:.5em;}
+    .tos-section.dark .clause-list li::before{background:var(--gold);}
+
+    /* ══ WINDOW STAT ROW ══ */
+    .window-row{display:flex;gap:1.2rem;flex-wrap:wrap;margin-bottom:2rem;}
+    .window-stat{flex:1;min-width:200px;background:var(--cream);border:1px solid rgba(27,67,50,.1);border-radius:8px;padding:1.4rem 1.5rem;}
+    .window-stat .num{display:block;font-family:'Playfair Display',serif;font-weight:700;font-size:1.7rem;color:var(--forest);}
+    .window-stat .label{color:#5a6360;font-size:.82rem;margin-top:.2rem;}
+
+    /* ══ PAYMENT TABLE ══ */
+    .pay-table{width:100%;border-collapse:collapse;margin-bottom:1.5rem;}
+    .pay-table th{text-align:left;font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--pine);padding:.7rem .9rem;border-bottom:2px solid rgba(27,67,50,.15);}
+    .pay-table td{padding:.8rem .9rem;font-size:.9rem;color:#5a6360;border-bottom:1px solid rgba(27,67,50,.08);}
+    .pay-table td:first-child{font-weight:600;color:var(--forest);white-space:nowrap;}
+
+    /* ══ CALLOUT ══ */
+    .tos-callout{background:var(--forest);border-radius:10px;padding:1.6rem 1.8rem;color:var(--cream);font-size:.92rem;line-height:1.7;margin-top:1.5rem;}
+    .tos-callout strong{color:var(--gold);}
+
+    /* ══ TOC ══ */
+    .toc-section{background:var(--cream);padding:3rem 2rem;}
+    .toc-inner{max-width:880px;margin:0 auto;}
+    .toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.4rem 2rem;margin-top:1.2rem;}
+    .toc-grid a{color:var(--forest);font-size:.88rem;text-decoration:none;font-weight:600;padding:.35rem 0;border-bottom:1px dashed rgba(27,67,50,.15);}
+    .toc-grid a:hover{color:var(--gold);}
+
+    /* ══ FINAL CTA (reused) ══ */
+    .cta-section{background:var(--cream);padding:6rem 2rem;text-align:center;}
+    .cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);color:var(--deep);margin-bottom:1rem;}
+    .cta-section p{color:#5a6360;max-width:46ch;margin:0 auto 2rem;line-height:1.65;}
+    .phone-big{display:inline-block;font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--forest);font-weight:700;text-decoration:none;margin-bottom:2rem;transition:color .2s;}
+    .phone-big:hover{color:var(--gold);}
+    .btn-primary{display:inline-block;background:var(--gold);color:var(--deep);font-family:'Inter',sans-serif;font-weight:700;font-size:.95rem;padding:.9rem 2.2rem;border:none;border-radius:3px;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 20px rgba(212,167,44,.3);}
+    .btn-primary:hover{background:#e8b82e;transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,167,44,.45);}
+    .cta-meta{margin-top:1.5rem;font-size:.76rem;color:#8a9490;}
+
+    @media(max-width:640px){
+      .tos-hero{padding:6rem 1.5rem 4rem;}
+      .tos-section{padding:3.5rem 1.5rem;}
+      .pay-table{display:block;overflow-x:auto;}
+    }
+  </style>
+
+  <!-- WebPage Schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://thegrizzlytreeexperts.com/terms-of-service#webpage",
+      "url": "https://thegrizzlytreeexperts.com/terms-of-service",
+      "name": "Terms of Service | The Grizzly Tree Experts",
+      "description": "Terms of Service governing tree removal, trimming, stump grinding, and emergency tree work performed by Grizzly Tree Experts LLC across Georgia, USA.",
+      "inLanguage": "en-US",
+      "isPartOf": {"@id":"https://thegrizzlytreeexperts.com/#website"},
+      "about": {"@id":"https://thegrizzlytreeexperts.com/#localbusiness"},
+      "publisher": {"@id":"https://thegrizzlytreeexperts.com/#localbusiness"},
+      "datePublished": "2024-01-01",
+      "dateModified": "2026-09-28",
+      "breadcrumb": {"@id":"https://thegrizzlytreeexperts.com/terms-of-service#breadcrumb"},
+      "mainEntity": {
+        "@type": "DigitalDocument",
+        "name": "Grizzly Tree Experts LLC Terms of Service",
+        "about": {"@id":"https://thegrizzlytreeexperts.com/#localbusiness"},
+        "dateModified": "2026-09-28"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://thegrizzlytreeexperts.com/terms-of-service#breadcrumb",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://thegrizzlytreeexperts.com/"},
+        {"@type":"ListItem","position":2,"name":"Terms of Service","item":"https://thegrizzlytreeexperts.com/terms-of-service"}
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<script>
+  fetch('/header.html')
+    .then(r=>r.text()).then(h=>{const e=document.createElement('div');e.innerHTML=h;document.body.prepend(e);}).catch(()=>{});
+</script>
+
+<!-- ══ HERO ══ -->
+<section class="tos-hero">
+  <div class="tos-hero-inner">
+    <div class="tos-badge">Grizzly Tree Experts LLC</div>
+    <h1>Terms of Service</h1>
+    <p>These terms explain what to expect when you book a job with us — how estimates and work windows are scheduled, how stump grinding and debris removal are handled, how payment works, and where responsibility sits between our crew and your property.</p>
+    <div class="tos-meta">
+      <span>Effective Sept 28, 2026</span>
+      <span>USDOT No. 3433756</span>
+      <span>MC-1742543</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TABLE OF CONTENTS ══ -->
+<section class="toc-section">
+  <div class="toc-inner">
+    <p class="tos-eyebrow">On this page</p>
+    <h2 class="tos-h2" style="margin-bottom:0;">Jump to a Section</h2>
+    <div class="toc-grid">
+      <a href="#scope">1. Scope of Services</a>
+      <a href="#estimates">2. Estimates &amp; Arrival Windows</a>
+      <a href="#stumps">3. Stump Grinding</a>
+      <a href="#debris">4. Debris Removal</a>
+      <a href="#payment">5. Payment Terms</a>
+      <a href="#invoicing">6. Invoicing &amp; Insurance Claims</a>
+      <a href="#coupons">7. Coupons &amp; Discounts</a>
+      <a href="#cancellations">8. Cancellations &amp; Rescheduling</a>
+      <a href="#weather">9. Weather &amp; Unexpected Delays</a>
+      <a href="#liability">10. Insurance &amp; Limited Liability</a>
+      <a href="#responsibilities">11. Your Responsibilities</a>
+      <a href="#waiver">12. Liability Waiver</a>
+      <a href="#general">13. General Terms</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 1. SCOPE ══ -->
+<section class="tos-section" id="scope">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 1</p>
+    <h2 class="tos-h2">Scope of Services</h2>
+    <p class="tos-lede">Grizzly Tree Experts LLC ("Grizzly," "we," "us") performs tree removal, tree trimming and pruning, stump grinding, cabling and bracing, land clearing, and related arboricultural work at the address you provide when booking. What's quoted is what's performed — anything discovered on-site that changes the scope (a second trunk, buried debris, restricted access) is re-priced before we proceed, not after.</p>
+    <div class="term-grid">
+      <div class="term-card"><h3>Pricing Basis</h3><p>Quotes are built from tree species, height and diameter, canopy and branch density, proximity to structures, and how our equipment can reach the site.</p></div>
+      <div class="term-card"><h3>Written Quotes Rule</h3><p>Verbal estimates are ballpark only. The written or texted quote you approve is what governs the job and the invoice.</p></div>
+      <div class="term-card"><h3>Change Orders</h3><p>If site conditions change the scope once work has started, we'll pause, explain the change, and get your OK before continuing or re-pricing.</p></div>
+      <div class="term-card"><h3>Out-of-Scope Work</h3><p>Fence repair, sod replacement, irrigation repair, and full landscape restoration are not included unless separately quoted in writing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 2. ESTIMATES / ARRIVAL WINDOWS ══ -->
+<section class="tos-section" id="estimates">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 2</p>
+    <h2 class="tos-h2">Estimates &amp; Arrival Windows</h2>
+    <p class="tos-lede">We schedule arrival windows rather than fixed appointment times, since prior jobs on the route can run long. We'll text you when a crew is on the way.</p>
+    <div class="window-row">
+      <div class="window-stat"><span class="num">2 hrs</span><span class="label">Estimate arrival window</span></div>
+      <div class="window-stat"><span class="num">4 hrs</span><span class="label">Work-day arrival window</span></div>
+      <div class="window-stat"><span class="num">24 hrs</span><span class="label">Typical estimate-to-quote turnaround</span></div>
+    </div>
+    <div class="clause-block">
+      <h4>What the estimate includes</h4>
+      <ul class="clause-list">
+        <li>A certified arborist walks the property, measures the tree(s) or stump(s), and flags any access or safety concerns.</li>
+        <li>You receive an itemized, written quote before any work is scheduled — nothing is charged for the visit itself.</li>
+        <li>Quotes are valid for 30 days from the date issued; pricing may be revisited after that window due to material and fuel cost changes.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 3. STUMP GRINDING ══ -->
+<section class="tos-section dark" id="stumps">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 3</p>
+    <h2 class="tos-h2">Stump Grinding</h2>
+    <p class="tos-lede">Stump grinding is quoted and performed as its own line item, separate from removal, even when booked together.</p>
+    <ul class="clause-list">
+      <li>Ground mulch and wood chips are left on-site in a pile near the stump — we don't haul, bag, sell, or spread it as part of a standard job.</li>
+      <li>We grind surface roots within the immediate radius of the stump and backfill the hole with the resulting chips, but we don't provide fine grading, topsoil, or sod restoration.</li>
+      <li>If a stump sits under a structure, fence, or utility line and can't be safely reached with our equipment, it will be marked as inaccessible on the invoice and excluded from the job — call us to revise the quote if access changes later.</li>
+      <li>Grinding depth is quoted per job (commonly 4"–6" below grade) and stated on your estimate; deeper grinding for construction or planting is available on request at an additional cost.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══ 4. DEBRIS REMOVAL ══ -->
+<section class="tos-section" id="debris">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 4</p>
+    <h2 class="tos-h2">Debris Removal</h2>
+    <p class="tos-lede">Debris hauling is tied to the job that generated it.</p>
+    <ul class="clause-list">
+      <li>We haul logs, brush, and chips created by the tree or stump work we performed that day as part of the quoted price.</li>
+      <li>We don't collect pre-existing brush piles, storm debris from other trees, or general yard waste unless it's added to the estimate before work begins.</li>
+      <li>If you'd like wood rounds or logs left for firewood, tell your arborist during the estimate — we'll stage them instead of hauling them.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══ 5. PAYMENT TERMS ══ -->
+<section class="tos-section" id="payment">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 5</p>
+    <h2 class="tos-h2">Payment Terms</h2>
+    <p class="tos-lede">Full payment is due on the day the physical work is complete — tree removal, trimming, or stump grinding — regardless of whether a related repair (sod, fencing, hardscape) is still pending. We don't offer installment or payment-plan arrangements.</p>
+    <p class="tos-eyebrow" style="margin-top:2rem;">Accepted Payment Methods</p>
+    <table class="pay-table">
+      <thead><tr><th>Method</th><th>Fee</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Tap-to-pay</td><td>No fee</td><td>Apple Pay, Google Pay, or card tap/swipe with the crew lead on-site.</td></tr>
+        <tr><td>ACH / bank transfer</td><td>No fee</td><td>Paid through the secure invoice link we text or email.</td></tr>
+        <tr><td>Online card (invoice)</td><td>2.99%–3.5%</td><td>Card payments made through the online invoice link.</td></tr>
+        <tr><td>Phone card payment</td><td>2.99%–3.5%</td><td>Processed by our office over the phone.</td></tr>
+        <tr><td>Check</td><td>No fee</td><td>Must be dated within 14 days of job completion; receipt is issued once the check clears.</td></tr>
+      </tbody>
+    </table>
+    <div class="tos-callout">If a check is returned unpaid, it's your responsibility to contact us within 5 business days to arrange an alternate payment. Unresolved balances may be referred to collections.</div>
+  </div>
+</section>
+
+<!-- ══ 6. INVOICING / INSURANCE ══ -->
+<section class="tos-section" id="invoicing">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 6</p>
+    <h2 class="tos-h2">Invoicing &amp; Insurance Claims</h2>
+    <p class="tos-lede">Invoices go out by text, email, or paper copy, whichever you prefer at booking.</p>
+    <ul class="clause-list">
+      <li>If you're filing a homeowners insurance claim for storm damage, you're responsible for taking your own before/after photos and submitting the claim to your carrier.</li>
+      <li>We'll supply documentation reasonably requested by your insurer — a W-9, certificate of insurance, or a scope-of-work summary — but we don't file claims on a customer's behalf.</li>
+      <li>Payment to Grizzly is not contingent on your insurance claim being approved or paid; the invoice for our work is due per Section 5 regardless of claim status.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══ 7. COUPONS ══ -->
+<section class="tos-section dark" id="coupons">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 7</p>
+    <h2 class="tos-h2">Coupons &amp; Discounts</h2>
+    <p class="tos-lede">We mail quarterly paper coupons to our service area. Screenshots or photos of a coupon are not accepted — the physical coupon must be presented.</p>
+    <ul class="clause-list">
+      <li>Mention the coupon when you schedule your estimate so it's noted on the work order.</li>
+      <li>The physical coupon must be handed to the arborist at the start of the on-site estimate.</li>
+      <li>Coupons can't be applied retroactively once a written or digital estimate has already been issued for the job.</li>
+      <li>One coupon per job; coupons can't be combined with other active promotions.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══ 8. CANCELLATIONS ══ -->
+<section class="tos-section" id="cancellations">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 8</p>
+    <h2 class="tos-h2">Cancellations &amp; Rescheduling</h2>
+    <ul class="clause-list">
+      <li>You can cancel or reschedule at no charge any time before the crew begins work on-site.</li>
+      <li>We may reschedule a job for weather, daylight, or crew safety reasons — if that happens, we'll contact you as soon as the decision is made.</li>
+      <li>Next-day or same-week rescheduling is offered on a best-effort basis and isn't guaranteed, especially during storm season when emergency calls take priority.</li>
+      <li>Repeated last-minute cancellations (after a crew has already been dispatched) may be subject to a dispatch fee, disclosed to you before it's applied.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══ 9. WEATHER ══ -->
+<section class="tos-section" id="weather">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 9</p>
+    <h2 class="tos-h2">Weather &amp; Unexpected Delays</h2>
+    <p class="tos-lede">Tree work depends on conditions we don't control. Jobs may be delayed by:</p>
+    <div class="term-grid">
+      <div class="term-card"><h3>Severe Weather</h3><p>High wind, lightning, or saturated ground make climbing and rigging unsafe for our crews.</p></div>
+      <div class="term-card"><h3>Equipment Issues</h3><p>Mechanical breakdowns or parts delays on cranes, chippers, or grinders.</p></div>
+      <div class="term-card"><h3>Local Restrictions</h3><p>Permit holds, HOA sign-off, or municipal right-of-way rules that surface after booking.</p></div>
+      <div class="term-card"><h3>Storm Season Surge</h3><p>Emergency, life-safety calls are prioritized ahead of scheduled non-emergency work.</p></div>
+    </div>
+    <p class="tos-lede" style="margin-top:1.5rem;margin-bottom:0;">When a delay happens, we reschedule as soon as it's safe — but we can't guarantee a same-day or next-day slot.</p>
+  </div>
+</section>
+
+<!-- ══ 10. LIABILITY ══ -->
+<section class="tos-section dark" id="liability">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 10</p>
+    <h2 class="tos-h2">Insurance &amp; Limited Liability</h2>
+    <p class="tos-lede">Grizzly Tree Experts LLC carries general liability and workers' compensation insurance, and we'll provide a certificate of insurance on request before the job starts.</p>
+    <div class="clause-block">
+      <h4>What we cover</h4>
+      <ul class="clause-list">
+        <li>We repair accidental property damage caused directly by our crew's work — payment for the original job is still due separately.</li>
+      </ul>
+    </div>
+    <div class="clause-block">
+      <h4>What we're not liable for</h4>
+      <ul class="clause-list">
+        <li>Utilities, irrigation lines, septic systems, or other infrastructure that wasn't disclosed to us before work began.</li>
+        <li>Pre-existing conditions such as internal decay, prior storm damage, or buried lines we had no way of identifying.</li>
+        <li>Temporary disruption to your or a neighbor's internet, power, cable, or water service caused by tree removal in proximity to utility lines.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 11. RESPONSIBILITIES ══ -->
+<section class="tos-section" id="responsibilities">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 11</p>
+    <h2 class="tos-h2">What You're Responsible For</h2>
+    <p class="tos-lede">A safe, efficient job depends on us knowing your property before the saws start. By booking, you agree to:</p>
+    <ul class="clause-list">
+      <li>Provide clear, safe access for our trucks, chipper, and crew — including moving vehicles blocking the work area.</li>
+      <li>Give neighbors a heads-up about likely noise, equipment access, or brief driveway blockage.</li>
+      <li>Move or cover breakable and valuable items (patio furniture, vehicles, décor) near the work zone.</li>
+      <li>Disclose underground systems — sprinklers, septic fields, invisible fencing, data or power lines — that aren't visible from the surface.</li>
+    </ul>
+    <div class="tos-callout">We are not responsible for damage to anything on your property that wasn't disclosed to us in advance, including buried lines, systems, or structures.</div>
+  </div>
+</section>
+
+<!-- ══ 12. WAIVER ══ -->
+<section class="tos-section dark" id="waiver">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 12</p>
+    <h2 class="tos-h2">Liability Waiver</h2>
+    <p class="tos-lede">By booking a job with Grizzly Tree Experts LLC, you agree to hold the company, its crew, and subcontractors harmless from claims arising out of:</p>
+    <ul class="clause-list">
+      <li>Site access or conditions that were unsafe or misrepresented at the time of booking.</li>
+      <li>Hidden or undisclosed hazards — including buried utilities, structural decay, or unstable ground — that a reasonable visual inspection would not reveal.</li>
+      <li>Disputes with neighbors, HOAs, or third parties arising from work performed at your direction on your property.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══ 13. GENERAL ══ -->
+<section class="tos-section" id="general" style="border-bottom:none;">
+  <div class="tos-inner">
+    <p class="tos-eyebrow">Section 13</p>
+    <h2 class="tos-h2">General Terms</h2>
+    <div class="clause-block">
+      <h4>Governing Law</h4>
+      <ul class="clause-list">
+        <li>These terms are governed by the laws of the State of Georgia, without regard to conflict-of-law principles. Any dispute arising from a job performed under these terms will be handled in the county where the work was performed.</li>
+      </ul>
+    </div>
+    <div class="clause-block">
+      <h4>Changes to These Terms</h4>
+      <ul class="clause-list">
+        <li>We may update these terms as our services or policies change. The version in effect on the date your estimate is issued governs that job. Continued use of our services after an update constitutes acceptance of the revised terms.</li>
+      </ul>
+    </div>
+    <div class="clause-block">
+      <h4>Entire Agreement</h4>
+      <ul class="clause-list">
+        <li>These terms, together with your signed or approved written estimate, make up the full agreement between you and Grizzly Tree Experts LLC for the job in question, superseding any prior verbal discussion.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ══ -->
+<section class="cta-section">
+  <h2>Questions About These Terms?</h2>
+  <p>Our office can walk through any part of this agreement before you book — no pressure, no obligation.</p>
+  <a href="tel:+18444430150" class="phone-big">(844) 443-0150</a><br/>
+  <a href="tel:+18444430150" class="btn-primary">Call Our Office</a>
+  <p class="cta-meta">Grizzly Tree Experts LLC · 514 Arnold Mill Rd, Woodstock, GA 30188 · USDOT No. 3433756 · MC-1742543</p>
+</section>
+
+<script>
+  fetch('https://thegrizzlytreeexperts.com/footer.html')
+    .then(r=>r.text()).then(h=>{const e=document.createElement('div');e.innerHTML=h;document.body.appendChild(e);}).catch(()=>{});
+</script>
+
+</body>
+</html>
