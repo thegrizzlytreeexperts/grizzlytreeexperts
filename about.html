@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>About Grizzly Tree Experts | Family-Owned Tree Service in Woodstock, GA</title>
+  <meta name="description" content="Meet Edgar Gomes and the family-owned team behind Grizzly Tree Experts, a Woodstock, GA tree service with 15+ years of experience in tree removal, trimming and emergency response." />
+  <link rel="canonical" href="https://thegrizzlytreeexperts.com/about" />
+  <link rel="icon" href="https://thegrizzlytreeexperts.com/images/the-grizzly-tree-experts-ga-logo.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{--forest:#1B4332;--deep:#081C15;--pine:#2D6A4F;--moss:#74A57F;--gold:#D4A72C;--cream:#F5F1E6;--offwhite:#FCFCF9;--charcoal:#242A26;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--offwhite);color:var(--charcoal);font-family:'Inter',sans-serif;overflow-x:hidden;}
+
+    /* HERO */
+    .hero{min-height:70vh;background:var(--deep);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:5rem 2rem 4rem;position:relative;overflow:hidden;}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(45,106,79,.4) 0%,transparent 65%);pointer-events:none;}
+    .hero-ring{position:absolute;border-radius:50%;border:1px solid rgba(116,165,127,.08);left:50%;pointer-events:none;animation:ringPulse 6s ease-in-out infinite;}
+    .hero-ring:nth-child(1){width:400px;height:400px;bottom:-140px;}
+    .hero-ring:nth-child(2){width:750px;height:750px;bottom:-300px;animation-delay:2s;}
+    @keyframes ringPulse{0%,100%{opacity:.3;transform:translateX(-50%) scale(1);}50%{opacity:.7;transform:translateX(-50%) scale(1.04);}}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(212,167,44,.5);color:var(--gold);font-size:.72rem;font-weight:600;letter-spacing:.1em;padding:.45rem 1.2rem;border-radius:2rem;margin-bottom:1.8rem;text-transform:uppercase;position:relative;}
+    .hero-badge::before{content:'●';color:var(--moss);font-size:.6rem;}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,6vw,5rem);font-weight:900;color:var(--cream);line-height:1.05;max-width:16ch;margin:0 auto 1.2rem;position:relative;}
+    .hero h1 em{color:var(--gold);font-style:normal;display:block;}
+    .hero-sub{color:rgba(245,241,230,.65);font-size:1.05rem;max-width:52ch;margin:0 auto 2.2rem;line-height:1.7;position:relative;}
+    .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;position:relative;}
+    .btn-primary{display:inline-block;background:var(--gold);color:var(--deep);font-weight:700;font-size:.95rem;padding:.9rem 2.2rem;border:none;border-radius:3px;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 20px rgba(212,167,44,.3);}
+    .btn-primary:hover{background:#e8b82e;transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,167,44,.45);}
+    .btn-outline{display:inline-block;color:var(--cream);font-size:.95rem;padding:.9rem 2.2rem;border:1.5px solid rgba(245,241,230,.25);border-radius:3px;text-decoration:none;transition:border-color .2s,background .2s;}
+    .btn-outline:hover{border-color:var(--cream);background:rgba(255,255,255,.05);}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+
+    /* SHARED */
+    .section-eyebrow{color:var(--pine);font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.7rem;}
+    .section-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.2rem);color:var(--deep);max-width:22ch;line-height:1.1;margin-bottom:2.5rem;}
+
+    /* FOUNDER STORY */
+    .story-section{background:var(--cream);padding:7rem 2rem;}
+    .story-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1.1fr;gap:4rem;align-items:center;}
+    @media(max-width:780px){.story-inner{grid-template-columns:1fr;gap:2.5rem;}}
+    .founder-card{position:relative;border-radius:14px;overflow:hidden;background:var(--deep);box-shadow:0 20px 60px rgba(8,28,21,.25);}
+    .founder-card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;}
+    .founder-cap{position:absolute;left:1.1rem;right:1.1rem;bottom:1.1rem;background:rgba(8,28,21,.92);border:1px solid rgba(116,165,127,.25);border-radius:10px;padding:1rem 1.2rem;}
+    .founder-cap strong{display:block;color:var(--cream);font-size:1rem;font-weight:600;}
+    .founder-cap span{color:var(--moss);font-size:.82rem;}
+    .story-text .section-title{margin-bottom:1.1rem;}
+    .story-text p{color:#5a6360;font-size:1rem;line-height:1.75;margin-bottom:1.1rem;max-width:58ch;}
+    .story-text p strong{color:var(--forest);}
+    .story-text .btn-primary{margin-top:.8rem;}
+
+    /* STATS */
+    .trust-bar{background:var(--forest);padding:3.5rem 2rem;}
+    .trust-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem 3rem;align-items:center;justify-content:space-between;}
+    .trust-stat{text-align:center;}
+    .trust-stat .num{display:block;font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--gold);line-height:1;}
+    .trust-stat .label{color:var(--moss);font-size:.82rem;margin-top:.3rem;display:block;}
+
+    /* VALUES */
+    .why-section{background:var(--deep);padding:7rem 2rem;}
+    .why-inner{max-width:1100px;margin:0 auto;}
+    .why-section .section-eyebrow{color:var(--moss);}
+    .why-section .section-title{color:var(--cream);}
+    .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;}
+    .why-card{background:rgba(255,255,255,.04);border:1px solid rgba(116,165,127,.15);border-radius:6px;padding:2rem 1.8rem;transition:background .25s,border-color .25s;}
+    .why-card:hover{background:rgba(255,255,255,.07);border-color:rgba(212,167,44,.3);}
+    .why-icon{width:48px;height:48px;border-radius:50%;background:rgba(212,167,44,.12);border:1px solid rgba(212,167,44,.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.1rem;}
+    .why-card h3{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream);margin-bottom:.5rem;}
+    .why-card p{color:rgba(116,165,127,.9);font-size:.9rem;line-height:1.65;}
+
+    /* CREDENTIALS */
+    .cred-section{background:var(--offwhite);padding:7rem 2rem;}
+    .cred-inner{max-width:1000px;margin:0 auto;}
+    .cred-list{display:flex;flex-direction:column;}
+    .cred-item{display:grid;grid-template-columns:48px 1fr;gap:1.5rem;padding:1.6rem 0;border-bottom:1px solid rgba(27,67,50,.1);}
+    .cred-item:last-child{border-bottom:none;}
+    .cred-icon{width:48px;height:48px;border-radius:50%;background:var(--forest);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;}
+    .cred-item h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--deep);margin-bottom:.35rem;}
+    .cred-item p{color:#5a6360;font-size:.92rem;line-height:1.65;}
+
+    /* CTA */
+    .cta-section{background:var(--cream);padding:6rem 2rem;text-align:center;}
+    .cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);color:var(--deep);margin-bottom:1rem;}
+    .cta-section p{color:#5a6360;max-width:48ch;margin:0 auto 2rem;line-height:1.65;}
+    .phone-big{display:inline-block;font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--forest);font-weight:700;text-decoration:none;margin-bottom:2rem;transition:color .2s;}
+    .phone-big:hover{color:var(--gold);}
+    @media(prefers-reduced-motion:reduce){.hero-ring{animation:none;}}
+  </style>
+
+  <!-- AboutPage + Person schema. The business is referenced by @id (defined on the homepage). -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://thegrizzlytreeexperts.com/about#about-us",
+      "url": "https://thegrizzlytreeexperts.com/about",
+      "name": "About Grizzly Tree Experts",
+      "description": "Learn about Grizzly Tree Experts, a family-owned tree service company in Woodstock, Georgia, founded by Edgar Gomes and serving homeowners and businesses across Georgia for more than 15 years.",
+      "inLanguage": "en-US",
+      "isPartOf": {"@id": "https://thegrizzlytreeexperts.com/#website"},
+      "about": {"@id": "https://thegrizzlytreeexperts.com/#localbusiness"},
+      "mainEntity": {"@id": "https://thegrizzlytreeexperts.com/#localbusiness"},
+      "primaryImageOfPage": {"@type": "ImageObject", "url": "https://thegrizzlytreeexperts.com/images/edgar-gomes-founder-grizzly-tree-experts.webp"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://thegrizzlytreeexperts.com/about#edgar-gomes",
+      "name": "Edgar Gomes",
+      "jobTitle": "Founder",
+      "url": "https://thegrizzlytreeexperts.com/about",
+      "image": {"@type": "ImageObject", "url": "https://thegrizzlytreeexperts.com/images/edgar-gomes-founder-grizzly-tree-experts.webp", "contentUrl": "https://thegrizzlytreeexperts.com/images/edgar-gomes-founder-grizzly-tree-experts.webp"},
+      "worksFor": {"@id": "https://thegrizzlytreeexperts.com/#localbusiness"},
+      "knowsAbout": ["Tree Care", "Tree Removal", "Tree Trimming", "Arboriculture", "Emergency Tree Service"],
+      "workLocation": {"@type": "Place", "name": "Woodstock, Georgia"},
+      "sameAs": [
+        "https://www.facebook.com/thegrizzlytreeexperts",
+        "https://www.instagram.com/thegrizzlytreeexperts/",
+        "https://www.linkedin.com/company/thegrizzlytreeexperts"
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<script>
+  fetch('/header.html').then(r=>r.text()).then(h=>{const e=document.createElement('div');e.innerHTML=h;document.body.prepend(e);}).catch(()=>{});
+</script>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-ring"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-badge">About us &middot; Woodstock, GA</div>
+  <h1>Family-owned tree care, <em>rooted in Georgia</em></h1>
+  <p class="hero-sub">For more than 15 years, Grizzly Tree Experts has helped homeowners, HOAs, and businesses keep their trees healthy and their properties safe.</p>
+  <div class="hero-ctas">
+    <a href="tel:+18444430150" class="btn-primary">&#9742; Call (844) 443-0150</a>
+    <a href="#founder" class="btn-outline">Meet the founder</a>
+  </div>
+</section>
+
+<!-- FOUNDER STORY -->
+<section class="story-section" id="founder">
+  <div class="story-inner">
+    <div class="founder-card">
+      <img src="https://thegrizzlytreeexperts.com/images/edgar-gomes-founder-grizzly-tree-experts.webp" alt="Edgar Gomes, founder of Grizzly Tree Experts in Woodstock, Georgia" loading="lazy" />
+      <div class="founder-cap"><strong>Edgar Gomes</strong><span>Founder, Grizzly Tree Experts</span></div>
+    </div>
+    <div class="story-text">
+      <p class="section-eyebrow">Our story</p>
+      <h2 class="section-title">Built by a local crew, for local yards</h2>
+      <p>Grizzly Tree Experts was founded by <strong>Edgar Gomes</strong> in Woodstock, Georgia, with one rule: treat every property like it's our own.</p>
+      <p>What began as a small local crew is now a <strong>family-owned tree service</strong> covering Cherokee, Cobb, Fulton, and Forsyth counties and communities across Georgia. The approach hasn't changed: honest quotes, careful work, and a cleanup that leaves your yard better than we found it.</p>
+      <p>We're not affiliated with any other business that uses the name "Grizzly Tree" or something similar.</p>
+      <a href="tel:+18444430150" class="btn-primary">&#9742; Talk to our team</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-stat"><span class="num">15+</span><span class="label">Years of Experience</span></div>
+    <div class="trust-stat"><span class="num">500+</span><span class="label">Jobs Completed</span></div>
+    <div class="trust-stat"><span class="num">24/7</span><span class="label">Emergency Line</span></div>
+    <div class="trust-stat"><span class="num">11</span><span class="label">Services Offered</span></div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="why-section">
+  <div class="why-inner">
+    <p class="section-eyebrow">What we stand for</p>
+    <h2 class="section-title">How we work on every property</h2>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon">🌲</div><h3>Assess first, cut second</h3><p>Every job starts with a look at the tree's structure and health, so we recommend only the work your property needs.</p></div>
+      <div class="why-card"><div class="why-icon">🪓</div><h3>Careful, skilled crews</h3><p>Our team follows industry-standard removal and pruning practices, with the right equipment for each job.</p></div>
+      <div class="why-card"><div class="why-icon">💬</div><h3>Straight answers</h3><p>You get a clear written estimate that explains what we'll do and why. No pressure and no hidden fees.</p></div>
+      <div class="why-card"><div class="why-icon">⚡</div><h3>There when storms hit</h3><p>Our emergency line is answered around the clock, and our crews respond fast when a tree threatens your home.</p></div>
+      <div class="why-card"><div class="why-icon">🧹</div><h3>A clean site, every time</h3><p>We haul away logs, brush, and debris, and grind stumps when they're part of the job.</p></div>
+      <div class="why-card"><div class="why-icon">🏡</div><h3>Local, not anonymous</h3><p>We live and work in the communities we serve, so our reputation with your neighbors matters to us.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="cred-section">
+  <div class="cred-inner">
+    <p class="section-eyebrow">Credentials</p>
+    <h2 class="section-title">Licensed, insured, and easy to verify</h2>
+    <div class="cred-list">
+      <div class="cred-item"><div class="cred-icon">✓</div><div><h3>USDOT No. 3433756</h3><p>Federally registered, with MC Docket No. MC-1742543.</p></div></div>
+      <div class="cred-item"><div class="cred-icon">✓</div><div><h3>Insured on every project</h3><p>General liability and workers' compensation coverage protect you and your property from start to finish.</p></div></div>
+      <div class="cred-item"><div class="cred-icon">✓</div><div><h3>Located in Woodstock, GA</h3><p>Visit or write to us at 514 Arnold Mill Rd, Woodstock, GA 30188.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Let's take care of your trees</h2>
+  <p>Call for a free estimate, or reach us any time if a storm brings a tree down.</p>
+  <a href="tel:+18444430150" class="phone-big">(844) 443-0150</a><br/>
+  <a href="tel:+18444430150" class="btn-primary">Get a Free Estimate</a>
+</section>
+
+<script>
+  fetch('https://thegrizzlytreeexperts.com/footer.html').then(r=>r.text()).then(h=>{const e=document.createElement('div');e.innerHTML=h;document.body.appendChild(e);}).catch(()=>{});
+</script>
+</body>
+</html>
