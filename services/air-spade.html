@@ -156,7 +156,7 @@ td:first-child{font-weight:600;color:var(--deep);}
 <script>
 (function(){function load(u){return fetch(u).then(function(r){if(!r.ok)throw 0;return r.text();});}
 load('/header.html').catch(function(){return load('https://thegrizzlytreeexperts.com/header.html');})
-.then(function(h){var e=document.createElement('div');e.innerHTML=h;document.body.prepend(e);}).catch(function(){});})();
+.then(function(h){var e=document.createElement('div');e.innerHTML=h;document.body.prepend(e);var b=e.querySelector('label.gte-burger[aria-label]');if(b){var t=b.getAttribute('aria-label');b.removeAttribute('aria-label');if(!b.textContent.trim()){var s=document.createElement('span');s.style.cssText='position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;';s.textContent=t;b.appendChild(s);}}}).catch(function(){});})();
 </script>
 
 <main>
@@ -178,75 +178,60 @@ load('/header.html').catch(function(){return load('https://thegrizzlytreeexperts
   </div>
 </section>
 
-<!-- OVERVIEW -->
-<section class="sec cream">
-  <div class="wrap">
-    <p class="section-eyebrow">What it solves</p>
-    <h2 class="section-title">Air Spade Root Care</h2>
-    <div class="split">
-      <div class="prose"><p>An air spade is a non-invasive tool powered by compressed air that safely removes soil from around tree roots. Unlike shovels or mechanical diggers, it exposes roots without cutting, bruising or damaging them—or the utilities beneath them.</p><p>Grizzly Tree Experts use air spade work to solve common Georgia tree problems: relieving red clay compaction that starves roots of oxygen, correcting girdling roots that strangle the trunk, fixing buried root flares, and inspecting roots before construction or landscaping. It's your chance to see what's happening underground and address it before the tree fails.</p></div>
-      <div class="fact">
-        <h3>When You Need It Most</h3>
-        <ul>
-          <li>Trees showing decline or slow growth in heavy clay</li>
-          <li>Root flare is buried or lost in mulch or soil</li>
-          <li>Girdling roots detected or suspected</li>
-          <li>Construction or digging planned near the tree</li>
-          <li>Soil compaction from foot traffic or vehicles</li>
-          <li>Before storm damage or storm prep work</li>
-        </ul>
-      </div>
+<!-- WHAT IS IT -->
+<section class="sec" id="what">
+  <div class="wrap split">
+    <div class="prose">
+      <p class="section-eyebrow">What is an air spade?</p>
+      <h2 class="section-title">Root Excavation That Leaves the Roots Alone</h2>
+      <p>An air spade is a handheld tool that fires a fast stream of compressed air into the ground. The air breaks up soil and carries it away, while roots, bark and buried lines stay untouched. It lets an arborist see what is really going on under your tree.</p>
+      <p>At <a href="https://thegrizzlytreeexperts.com/">GA Tree Service</a> leader Grizzly Tree Experts, air spade work is part of our <a href="https://thegrizzlytreeexperts.com/services/tree-health-inspection">tree health inspection</a> and root care programs. It is the safest way to diagnose root problems, and often the only way to fix them without removing the tree.</p>
+      <p>Because Georgia soil is so hard on roots, this is one of our most requested specialty services across metro Atlanta, the Cherokee, Cobb, Fulton and Forsyth county area, and the Savannah coast.</p>
+    </div>
+    <div class="fact">
+      <h3>What we use air spade work for</h3>
+      <ul>
+        <li>Root collar excavation to restore the root flare</li>
+        <li>Finding and correcting girdling or circling roots</li>
+        <li>Relieving compacted clay and improving soil oxygen</li>
+        <li>Root inspections for decay, rot and structural risk</li>
+        <li>Pre-construction root mapping and protection</li>
+        <li>Safe soil amendment and deep <a href="https://thegrizzlytreeexperts.com/services/tree-shrub-fertilization">fertilization</a></li>
+        <li>Exposing buried utilities near trees</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- BENEFITS -->
-<section class="sec dark">
+<!-- LOCAL ISSUES -->
+<section class="sec dark" id="georgia-issues">
   <div class="wrap">
-    <p class="section-eyebrow">Why choose it</p>
-    <h2 class="section-title">Air Spade Advantages</h2>
+    <p class="section-eyebrow">Local conditions</p>
+    <h2 class="section-title">Georgia Soil and Weather Problems We Fix</h2>
     <div class="grid">
-      <div class="card">
-        <h3>Non-destructive</h3>
-        <p>Compressed air only—no cutting, no bruising, no severing critical roots. The tree is never harmed in the process.</p>
-      </div>
-      <div class="card">
-        <h3>See the real problem</h3>
-        <p>Visual inspection of the root collar and structural roots shows exactly what's happening so treatment can be targeted.</p>
-      </div>
-      <div class="card">
-        <h3>Treat before decline</h3>
-        <p>Correcting girdling roots, relieving compaction and exposing buried flares can save a struggling or at-risk tree.</p>
-      </div>
-      <div class="card">
-        <h3>Safe excavation</h3>
-        <p>Air spade is utility-safe—buried lines are visible and never damaged, unlike trenchers or backhoes.</p>
-      </div>
-      <div class="card">
-        <h3>No damage to hardscape</h3>
-        <p>Works around driveways, sidewalks, patios and roots all in tight or delicate spaces without disturbing the surface.</p>
-      </div>
-      <div class="card">
-        <h3>Protects your property</h3>
-        <p>Staged soil removal and careful cleanup mean your yard stays neat, and debris is hauled—not left for you.</p>
-      </div>
+      <div class="card"><h3>Compacted Red Clay</h3><p>Georgia clay packs down hard, starves roots of oxygen and sheds water instead of absorbing it. Air excavation loosens the root zone, and amendments can be worked in without cutting a single root.</p></div>
+      <div class="card"><h3>Infill and New-Build Damage</h3><p>Grading, trenching and heavy equipment around Atlanta, Alpharetta, Cumming, Canton and Woodstock neighborhoods compact soil and sever roots. We map roots first so builders can plan around them.</p></div>
+      <div class="card"><h3>Buried Root Flares</h3><p>Fill dirt, deep mulch piles and landscaping grade changes bury the root collar and invite rot. We excavate to the true flare, a common fix in Marietta, Roswell and Decatur yards.</p></div>
+      <div class="card"><h3>Storm and Saturated Soil</h3><p>Heavy Georgia rain, tornado-season storms and tropical systems loosen root plates and hide damage. An air spade inspection shows whether a tree is stable before the next storm. See our <a href="https://thegrizzlytreeexperts.com/services/storm-prep-support-systems">storm prep support systems</a>.</p></div>
+      <div class="card"><h3>Coastal Live Oaks and Sandy Soil</h3><p>In Savannah, Pooler and Port Wentworth, live oaks and water oaks deal with high water tables, pavement and sidewalk pressure. Air excavation protects heritage roots during repairs.</p></div>
+      <div class="card"><h3>Root Rot and Decline</h3><p>Yellowing leaves, thinning crowns and dieback are often root problems. Exposing the roots shows rot, girdling and fungal issues that a canopy inspection alone misses.</p></div>
     </div>
   </div>
 </section>
 
-<!-- CONDITIONS -->
-<section class="sec">
-  <div class="wrap" style="max-width:900px;">
-    <p class="section-eyebrow">Common issues fixed</p>
-    <h2 class="section-title">Problems Air Spade Solves</h2>
+<!-- COMPARISON -->
+<section class="sec cream" id="compare">
+  <div class="wrap">
+    <p class="section-eyebrow">Why air, not steel</p>
+    <h2 class="section-title">Air Spade vs. Traditional Digging</h2>
     <div class="tbl-wrap"><table>
-      <thead><tr><th>Problem</th><th>Cause</th><th>How Air Spade Helps</th></tr></thead>
+      <thead><tr><th>Factor</th><th>Air Spade</th><th>Shovel / Excavator</th></tr></thead>
       <tbody>
-        <tr><td>Red clay compaction</td><td>Heavy Georgia clay compresses and blocks oxygen to roots, especially near construction.</td><td>Removes soil and compacted layers to restore drainage and aeration around the root zone.</td></tr>
-        <tr><td>Girdling roots</td><td>Circling roots strangle the trunk, cutting off water and nutrient flow as they grow.</td><td>Exposes the root collar and identifies which roots are girdling, so they can be cut or directed away.</td></tr>
-        <tr><td>Buried root flare</td><td>Excess mulch or soil piled against the trunk hides the flare and rots the base.</td><td>Reveals the true flare and allows you to remove excess soil to the proper grade.</td></tr>
-        <tr><td>Construction damage</td><td>Digging, grading or heavy equipment compacts soil and severs roots near a building site.</td><td>Assesses damage, removes compacted soil and clears the area for recovery or corrective care.</td></tr>
-        <tr><td>Root inspection</td><td>Unknown decline or slow growth—you need to know if roots are the cause.</td><td>Non-invasive visual inspection of structural roots reveals health, pests, disease or physical damage.</td></tr>
+        <tr><td>Root damage</td><td>Roots and bark stay intact</td><td>Roots are often cut, torn or crushed</td></tr>
+        <tr><td>Feeder roots</td><td>Preserved</td><td>Frequently lost</td></tr>
+        <tr><td>Buried utilities</td><td>Exposed without harm</td><td>Risk of strikes</td></tr>
+        <tr><td>Diagnosis</td><td>Full root view for accurate assessment</td><td>Limited, guesswork</td></tr>
+        <tr><td>Tree recovery</td><td>Faster, lower stress</td><td>Higher decline and decay risk</td></tr>
       </tbody>
     </table></div>
   </div>
