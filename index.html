@@ -941,7 +941,21 @@ button[disabled]{opacity:.65;cursor:wait}
   function load(id, url){
     fetch(url, {credentials:"same-origin"})
       .then(function(r){ return r.ok ? r.text() : Promise.reject(); })
-      .then(function(h){ var el = document.getElementById(id); if(el) el.innerHTML = h; })
+      .then(function(h){
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.innerHTML = h;
+
+        /* Accessibility fix: aria-label belongs on the menu toggle control,
+           not on the decorative label element. */
+        var burger = el.querySelector('label.gte-burger[aria-label]');
+        if (burger) burger.removeAttribute('aria-label');
+
+        var toggle = el.querySelector('#gte-toggle');
+        if (toggle && !toggle.hasAttribute('aria-label')) {
+          toggle.setAttribute('aria-label', 'Toggle navigation menu');
+        }
+      })
       .catch(function(){});
   }
   load("site-header", "/header.html");
